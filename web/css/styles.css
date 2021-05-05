@@ -1130,7 +1130,7 @@ a:hover.back-to-top {
 	}
 
 	.basic-1 .logo-container img {
-		max-width: 8rem;
+		max-width: 100%;
 		margin-bottom: 2.5rem;
 	}
 	/* end of description */
@@ -1220,7 +1220,7 @@ a:hover.back-to-top {
 	}
 
 	.basic-1 .logo-container img {
-		max-width: 8.875rem;
+		max-width: 100%;
 		margin-right: 2rem;
 		margin-left: 2rem;
 	}
