@@ -1,0 +1,31 @@
+#typingcontainer {
+    padding-top: 12rem;
+	padding-bottom: 16rem;
+	text-align: center;
+}
+
+#text {
+    color: #30363a;
+	font: 700 4rem/6rem "Open Sans", sans-serif;
+	letter-spacing: -0.5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 5px;
+	height: 80px;
+	background-color: #30363a;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: #e5575e; 
+	}
+}
