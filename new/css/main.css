@@ -20,7 +20,240 @@
  -------------------------------------------- */
  
  
+ /* burger */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+/* filter */
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+:root {
+  --black: #1a1a1a;
+  --white: #fff;
+  --green: #00b388;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.filters {
+  text-align: center;
+  margin-top: 2rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.filters * {
+  display: inline-block;
+}
+
+.filters label {
+ min-width: 50px; border: 1px solid #222; border-radius: 2rem; font-family: inherit; font-size: 16px; line-height: normal; color: #222; text-decoration: none; background: none; cursor: pointer; padding: 0.5rem 1rem; margin-bottom: 0.25rem; margin-right: 0.5rem; display: inline-block; outline: none; position: relative; transition: all 0.1s; overflow: hidden;
+}
+
+.filters label:after {
+	width: 0%; height: 100%; top: 0; left: 0; background: #222; content: ''; position: absolute; z-index: -1; transition: all 0.3s;
+	}
+
+.filters label:hover,
+.filters label:active {
+	color: #fff !important;
+	}
+.filters label:active {
+	transition: all 0.1s; transform: scale(0.9); outline: 0;
+	}
+.filters label:hover:after,
+.filters label:active:after {
+	width: 100%;
+	}
+
+
+
+:root {
+  --black: #1a1a1a;
+  --white: #fff;
+}
+
+[value="All"]:checked ~ .filters [for="All"],
+[value="Architecture"]:checked ~ .filters [for="Architecture"],
+[value="Start-up"]:checked ~ .filters [for="Start-up"],
+[value="ProductDesign"]:checked ~ .filters [for="ProductDesign"],
+[value="Making"]:checked ~ .filters [for="Making"],
+[value="Teaching"]:checked ~ .filters [for="Teaching"],
+[value="Environment"]:checked ~ .filters [for="Environment"],
+[value="Research"]:checked ~ .filters [for="Research"],
+[value="Competitions"]:checked ~ .filters [for="Competitions"],
+[value="GraphicDesign"]:checked ~ .filters [for="GraphicDesign"],
+[value="Featured"]:checked ~ .filters [for="Featured"],
+[value="Music"]:checked ~ .filters [for="Music"],
+[value="Illustrations"]:checked ~ .filters [for="Illustrations"],
+[value="Photography"]:checked ~ .filters [for="Photography"],
+[value="Volunteering"]:checked ~ .filters [for="Volunteering"]{
+    background:var(--black);
+    color:var(--white);
+}  
+
+
+[value="All"]:checked ~ .posts [data-category] {
+  display: block;
+}
+[value="Architecture"]:checked ~ .posts .post:not([data-category~="Architecture"]),
+[value="Start-up"]:checked ~ .posts .post:not([data-category~="Start-up"]),
+[value="ProductDesign"]:checked ~ .posts .post:not([data-category~="ProductDesign"]),
+[value="Making"]:checked ~ .posts .post:not([data-category~="Making"]),
+[value="Teaching"]:checked ~ .posts .post:not([data-category~="Teaching"]),
+[value="Environment"]:checked ~ .posts .post:not([data-category~="Environment"]),
+[value="Research"]:checked ~ .posts .post:not([data-category~="Research"]),
+[value="Competitions"]:checked ~ .posts .post:not([data-category~="Competitions"]),
+[value="GraphicDesign"]:checked ~ .posts .post:not([data-category~="GraphicDesign"]),
+[value="Featured"]:checked ~ .posts .post:not([data-category~="Featured"]),
+[value="Music"]:checked ~ .posts .post:not([data-category~="Music"]),
+[value="Illustrations"]:checked ~ .posts .post:not([data-category~="Illustrations"]),
+[value="Photography"]:checked ~ .posts .post:not([data-category~="Photography"]),
+[value="Volunteering"]:checked ~ .posts .post:not([data-category~="Volunteering"]){
+  display: none;
+}
+
+
+
+
+:root {
+  --black: #1a1a1a;
+  --white: #fff;
+  --green: #00b388;
+}
+
+.posts {
+  display: grid;
+  grid-gap: 4.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.posts .post {
+  background: #fafafa;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.posts .post:hover {
+/*  border: 1.5px solid #00b388;*/
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: all 0.1s;
+}
+
+.posts .post-title {
+  font-size: 1.3rem;
+}
+
+.posts .post-caption {
+  margin-top: -0.4rem;
+margin-bottom: 1rem;
+    line-height: 110%;
+  font-size: .9rem;
+  color:gray;
+}
+
+
+.posts .post-title:hover {
+  text-decoration: underline;
+}
+
+.posts figcaption {
+  padding: 1rem;
+}
+
+.posts .post-categories {
+  margin-bottom: 0.1rem;
+  font-size: .75rem;
+}
+
+.posts .post-categories * {
+  display: inline-block;
+}
+
+.posts .post-categories li {
+  margin-bottom: 0.1rem;
+  margin-top: 0.3rem;
+}
+
+.posts .post-categories a {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  line-height: normal;
+  background: all 0.1s;
+  margin-right: 0.5rem;
+}
+
+.posts .post-categories a:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+@media screen and (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 /*  --------------------------------------------
 
@@ -170,6 +403,13 @@ p:last-child {
 .content {
 	padding: 3em 0;
 	}
+.content-filter {
+	width: 80%; margin: 0 auto; max-height: 100%; position: relative; z-index: 20;
+	}
+.content-f {
+	padding: 8em 0;
+	}
+
 	
 /* PROFILE IMAGE */
 .profile-image {
@@ -675,6 +915,9 @@ html a.social-link:hover:before {
 .button {
 	border: 2px solid #222; font-family: inherit; font-size: 16px; line-height: 1; color: #222; text-decoration: none; background: none; cursor: pointer; padding: 16px 32px; margin: 10px 20px 0 0; display: inline-block; outline: none; position: relative; transition: all 0.3s; overflow: hidden;
 	}
+.button.fav {
+	margin: 10px 10px 0 0;
+	}
 .button:only-child {
 	margin-right: 0px;
 	}
@@ -1005,6 +1248,11 @@ html a.social-link:hover:before {
 	.profile-image.big {
 		max-height: 192px;
 		}
+    
+    .profile-image.superbig {
+		max-height: 369px;
+		}
+
 	
 	h1 { 
 		font-size: 4vw; line-height: 1;

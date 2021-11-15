@@ -1,9 +1,6 @@
-/*
-	Name: LazyGuy
-	Description: Personal Landing Page
-	Version: 1.0
-	Author: pixelwars
-*/
+function myFunction(x) {
+    x.classList.toggle("change");
+}
 
 (function () {
    'use strict';
