@@ -127,7 +127,7 @@ a{
 
 [value="All"]:checked ~ .filters [for="All"],
 [value="Architecture"]:checked ~ .filters [for="Architecture"],
-[value="Start-up"]:checked ~ .filters [for="Start-up"],
+[value="Startup"]:checked ~ .filters [for="Startup"],
 [value="ProductDesign"]:checked ~ .filters [for="ProductDesign"],
 [value="Making"]:checked ~ .filters [for="Making"],
 [value="Teaching"]:checked ~ .filters [for="Teaching"],
@@ -137,7 +137,7 @@ a{
 [value="GraphicDesign"]:checked ~ .filters [for="GraphicDesign"],
 [value="Featured"]:checked ~ .filters [for="Featured"],
 [value="Music"]:checked ~ .filters [for="Music"],
-[value="Illustrations"]:checked ~ .filters [for="Illustrations"],
+[value="Coding"]:checked ~ .filters [for="Coding"],
 [value="Photography"]:checked ~ .filters [for="Photography"],
 [value="Volunteering"]:checked ~ .filters [for="Volunteering"]{
     background:var(--black);
@@ -149,7 +149,7 @@ a{
   display: block;
 }
 [value="Architecture"]:checked ~ .posts .post:not([data-category~="Architecture"]),
-[value="Start-up"]:checked ~ .posts .post:not([data-category~="Start-up"]),
+[value="Startup"]:checked ~ .posts .post:not([data-category~="Startup"]),
 [value="ProductDesign"]:checked ~ .posts .post:not([data-category~="ProductDesign"]),
 [value="Making"]:checked ~ .posts .post:not([data-category~="Making"]),
 [value="Teaching"]:checked ~ .posts .post:not([data-category~="Teaching"]),
@@ -159,7 +159,7 @@ a{
 [value="GraphicDesign"]:checked ~ .posts .post:not([data-category~="GraphicDesign"]),
 [value="Featured"]:checked ~ .posts .post:not([data-category~="Featured"]),
 [value="Music"]:checked ~ .posts .post:not([data-category~="Music"]),
-[value="Illustrations"]:checked ~ .posts .post:not([data-category~="Illustrations"]),
+[value="Coding"]:checked ~ .posts .post:not([data-category~="Coding"]),
 [value="Photography"]:checked ~ .posts .post:not([data-category~="Photography"]),
 [value="Volunteering"]:checked ~ .posts .post:not([data-category~="Volunteering"]){
   display: none;
