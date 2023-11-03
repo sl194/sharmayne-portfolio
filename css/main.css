@@ -359,9 +359,9 @@ p:last-child {
 .soft-rounded {
 	border-radius: 8px;
 	}
-	.no-rounded {
-		border-radius: 0px;
-		}
+.no-rounded {
+	border-radius: 0px;
+	}
 .is-text-align-center {
 	text-align: center;
 	}
@@ -1260,6 +1260,10 @@ html a.social-link:hover:before {
     .profile-image.superbig {
 		max-height: 369px;
 		}
+
+		.profile-image.ultrabig {
+			max-height: 100%;
+			}
 
 	
 	h1 { 
