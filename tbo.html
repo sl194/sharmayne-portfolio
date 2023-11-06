@@ -160,23 +160,37 @@
     <p>Team member of TBO (To Be Optimised), lead designer, assistant plugin developer</p>
       <br>
       <h4>Other Members</h4>
-    <p>· Jovin Lim (ASD)<br>· Valent Tan (ASD)<br>· Sheryl Mah (ASD)<br>· Charini Jinadasa (ESD)<br>· Wu Xinyun (ISTD)</p>
+    <p>· Jovin Lim (ASD)<br>· Valent Tan (ASD)<br>· Sheryl Mah (ASD)<br>· Charini Jinadasa (ESD)<br>· Wu Xinyun (ESD)</p>
       <br>
       <h4>Duration</h4>
     <p>Jan - Aug 2022</p>
   </div>
   <div class="column right" style="background-color:white;">
 <!--    <h2>Column 2</h2>-->
-      <h4>Abstract</h4>
-    <p>TBO (To Be Optimised) is an Entrepreneurship Capstone which enables efficiency in hospital design by helping healthcare architects to generate layouts based on authority guidelines and advice from medical planners, and optimise layouts based on pedestrian simulation throughout the generated spaces.
-      <br><br>The project consists of a downloadable plugin for Revit called <a class="pink text" href="https://capstone2022.sutd.edu.sg/projects/bestfit-the-ultimate-building-configurator">BestFit</a> which automatically generates layouts based on a selected floor plan and a website which showcases the plugin. The technical aspects include the use of C# to interact with Revit API, Python for optimisation algorithms and HTML / CSS for the website showcase. Rhinoceros and Grasshopper was initially used to visualize outputs from tests of procedural generation algorithms.
-      <br><br><a class="pink text" href= "https://capstone2022.sutd.edu.sg/projects/bestfit-the-ultimate-building-configurator">🔗 Link to official website</a></p>
-      <a class="pink text" href= "https://drive.google.com/file/d/1R-Rnm3-TQ5YCEg77MLk8siD3uKcahA5A/view?usp=sharing">🔗 Link to download Revit plugin</a></p>
+      <h4>Project Description</h4>
+    <p>TBO (To Be Optimised) is an Entrepreneurship Capstone which enables efficiency in hospital design by helping healthcare architects to generate layouts based on authority guidelines and advice from medical planners, and optimise layouts based on pedestrian simulation throughout the generated spaces. Before the design and development of our solution, we worked on market and user research, interviewing individuals and stakeholders such as architects, medical planners and facilities management staff from hospitals to find out more about the problems they face and how the project can add value to their routines and organisation. From the research and interviews, we were able to accurately pinpoint the target group of customers and beachhead market and understand the customers’ needs and constraints. Information from the interviews and feedback from customers aided our team’s design decision-making process, validated the different features for the product and helped us decide when to make necessary changes. With the information, we came up with a design of our product – a Revit plugin that automatically generates and optimises floor plan layouts for Specialist Outpatient Clinics. 
+      <br><br>The project consists of a downloadable plugin for Revit called <a class="pink text" href="https://drive.google.com/file/d/1R-Rnm3-TQ5YCEg77MLk8siD3uKcahA5A/view?usp=sharing">BestFit</a> which automatically generates layouts based on a selected floor plan and a <a class="pink text" href= "https://capstone2022.sutd.edu.sg/projects/bestfit-the-ultimate-building-configurator">website</a> which showcases the plugin. The technical aspects include the use of C# to interact with Revit API, Python for optimisation algorithms, and HTML/CSS/JS for the website showcase. Rhinoceros and Grasshopper was initially used to visualize outputs from tests of procedural generation algorithms.
      <br>
         </div>
         
-      <h2>Research Motivation</h2>
-        <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/hbi_motiv.png"/>
+        <h2>Outline</h2>
+        <h3><a class="pink text" href="#intro">Introduction</a> · <a class="pink text" href="#litreview">Literature Review</a> · <a class="pink text" href="#soln">Solution Overview</a> · <a class="pink text" href="#uiux">User Interface & User Experience</a> · <a class="pink text" href="#gen">Generation Algorithm</a> · <a class="pink text" href="#opti">Optimisation Algorithm</a> · <a class="pink text" href="#final">Final Product</a> · <a class="pink text" href="#impact">Impact</a> · <a class="pink text" href="#fw">Future Works</a></h3>
+        <h2 id='intro'>Introduction</h2>
+        In Singapore, the Built Environment industry is forward-looking and plays a significant part in building Singapore's future. With Singapore at the forefront of BIM adoption internationally, it is evident that Singapore is keen to take steps to augment work productivity in its Architecture, Engineering and Construction (AEC) sectors. Hence, to ride on the coattails of this movement, we aim to ameliorate inefficiencies in the current architectural design process by automating and optimizing certain portions of the design process.
+        <br>
+<h3>Problem Statement</h3>
+Architects working on hospital projects require many months of meetings with various consultants and additional expertise from medical planners. They also need to consider over a 1000 pages of authority guidelines, regulations and codes while juggling ever-changing requirements from clients. This results in an estimated 30% more time and money wasted per project.
+<br><h3>Scoping</h3>
+However, due to the expansiveness of the architecture, engineering, and construction industry, we needed to reduce our initial scope and target a particular segment. After extensive research, we decided to focus on healthcare architecture in particular as Singapore has one of the fastest ageing populations in Asia (International Trade Administration, 2021). By 2030, one in four people will be aged over 65 years, and that this will rise to almost one in two by 2050 (Population Whitepaper, 2013). In addition, the Singapore government will be spending a significant portion of the budget to address healthcare infrastructure concerns in the short and long term and there are a slew of upcoming healthcare infrastructure projects such as the construction of new hospitals and polyclinics, extensions and reconstructions of existing ones. Hence, we believe that there lies a great opportunity to enable efficiency in the architectural design process specifically for healthcare architects.
+<br><h3>Market Research</h3>
+As healthcare architecture is a very specialized field that we were unfamiliar with, we had to engage in copious amounts of research to develop a better understanding of it. We first conducted interviews with healthcare architects, medical planners and people who worked in healthcare facilities management to understand more about the workflow of hospital design and validate certain assumptions we had made about problems faced in the planning and design of healthcare facilities. At the same time, we were on the lookout for pressing pain points that healthcare architects had to help us think of and formulate solutions to mitigate their problems. 
+<br><h3>Validation</h3>
+From the interview responses we were able to extract out three key problems architects are currently facing. Firstly, there is an overwhelming number of codes and regulations to constantly check with and it is very time consuming to check and ensure compliance with all of them, especially when the design is ever-changing which often results in clashes with the codes. Moreover, frequent delays in communication between architects and multiple consultants cause updates to reach different parties at different speeds, leading to adverse consequences such as huge amounts of time and effort being lost. Lastly, continuous changes in demands and requirements from clients, especially when there are many stakeholders involved, makes it extremely arduous for architects to reconcile the differences and create new designs that satisfy all parties. As a result, architects are often very overworked. Hence, we created BestFit, a Revit plugin that automatically generates and optimizes floor plan layouts for architects.
+
+<h2 id='litreview'>Literature Review</h2>
+
+      <h2>Product Architecture</h2>
+        <img style="width:100%; object-fit: contain;" class="profile-image ultrabig soft-rounded" src="images/tbo1.png"/>
 
   
       <h2>Related Works</h2>
