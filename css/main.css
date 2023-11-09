@@ -928,8 +928,13 @@ html a.social-link:hover:before {
 	margin-right: 0px;
 	}
 .button.small {
-	font-size: 13px; padding: 8px 20px;
+	font-size: 13px; padding: 8px 20px; 
 	}
+
+.button.skills {
+	margin: 0 0 0 0;font-size: 13px; padding: 8px 20px;
+		}
+
 .button.rounded {
 	border-radius: 50px;
 	}
