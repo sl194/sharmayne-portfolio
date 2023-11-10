@@ -21,10 +21,39 @@
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
+    <style>
+       
+
+    @media (max-width: 768px) {
+        .content-wrap {
+            display:none}
+        
+      .desktop-message {
+        display: block;
+        text-align: center;
+        padding: 20px 20px;
+        background-color: #f8d7da; /* Adjust the background color as needed */
+        color: #721c24; /* Adjust the text color as needed */
+      }
+    }
+
+    @media (min-width: 768px) 
+    {.desktop-message {
+      display: none;
+    }}
+
+  </style>
+    
+
 </head>
 
+
+
 <body>
-	
+    
+	<div class="desktop-message">
+        <h3>Apologies for any inconvenience. This site is undergoing mobile optimization. For the best experience, please use a desktop. Thank you for your understanding!</h3>
+      </div>
     
     <!-- CONTENT-WRAP -->
     <div class="content-wrap">  
@@ -42,16 +71,7 @@
             </h3> </div>
         
             
-        
-<!--
-        <div class="container" onclick="myFunction(this)">
-            <div style = "position:fixed; right:70px; top:70px;">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
--->
-
+  
         
         
         <!-- CONTENT -->
@@ -74,12 +94,7 @@
                     <p>thanks for stopping by &</p>
                     <p>hope you're having</p>
                     <p>a <span class="text yellow">great day ✨</span> so far!</p>
-<!--
-                    <p>if not,</p>
-                    <p>here's a lil' cup of <span class="text leather">coffee ☕</span></p>
-                    <p>and some <span class="text peach">cake 🍰</span></p>
-                    <p>to keep you going! 🌟</p>
--->
+
                 </div>
                 <!-- TEXTS TO BE TYPED -->
                 
@@ -91,24 +106,11 @@
             <!-- self intro -->
             <br>
             <h4>A little self intro</h4>
-<!--            <h1>i'm sharmayne,</h1>-->
-<!--            <h3>Previously wanted to design buildings following the footsteps of <a class="link-1 green" href="https://www.casabatllo.es/en/antoni-gaudi/">Antoni Gaudí</a>;<a class="link-1 red" href="https://jnd.org/">Don Norman</a><br><br>-->
-               <h3>
-<!--
-                <a class="link-1 leather">architecture graduate 🏛,</a>
-                <a class="link-1 hot-pink">entrepreneur 💡,</a>
-                <a class="link-1 aqua">maker 👩🏻‍🔧,</a>
-                <a class="link-1 peach">music teacher 🎶,</a>
-                <a class="link-1 blue">researcher 👩🏻‍🔬 </a>&
-                <a class="link-1 azure">environmentalist ♻️;</a> <br><br>
--->
+ <h3>
+
                 I'm currently a <a class="link-1 red" href="https://www.sutd.edu.sg/">SUTD</a> PhD student focusing on Human-Centered Design & Research on Smart Cyber-Physical Systems!
             </h3>
-            <!-- self intro -->
-        
-<!--            <h1>i'm sharmayne,</h1>-->
-<!--            <h3>Previously wanted to design buildings following the footsteps of <a class="link-1 green" href="https://www.casabatllo.es/en/antoni-gaudi/">Antoni Gaudí</a>;<a class="link-1 red" href="https://jnd.org/">Don Norman</a><br><br>-->
-            <h4>P.S. pages on this website might take a while to load due to the large volume of media on it...please be patient while waiting for it to load, thank you! 🙏</h4>
+      <h4>P.S. pages on this website might take a while to load due to the large volume of media on it...please be patient while waiting for it to load, thank you! 🙏</h4>
 <!--            <h4>P.S. A major revamp to this website is currently WIP...</h4>-->
 
             <!-- self intro -->
@@ -124,7 +126,7 @@
             
         <div style = "position:fixed; right:60px; bottom:40px;">
             <h6>made from scratch with HTML, CSS & JS as well as thousands of google 🔎</h6>
-            <!--<a class="link-1 green" href="https://sl194.github.io/sharmayne-portfolio/">old website</a>-->
+        
         </div>
             
           
