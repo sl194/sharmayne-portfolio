@@ -5,7 +5,9 @@
 	<meta charset="utf-8">
     <meta name="description" content="Sharmayne's Portfolio" />
     <meta name="author" content="Sharmayne">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     
     <title>About Sharmayne</title>
     <link rel="icon" href="images/v3%20logo.png" type="image/icon"/>
@@ -20,120 +22,151 @@
     
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-<style>
-    @media (max-width: 768px) {
-      .content-filter {
-          display:none}
-      
-    .desktop-message {
-      display: block;
-      text-align: center;
-      padding: 20px 20px;
-      background-color: #f8d7da; /* Adjust the background color as needed */
-      color: #721c24; /* Adjust the text color as needed */
+
+    <style>
+
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 1000px) {
+        /* .content-filter {
+              display:none} */
+
+        /* .desktop-message {
+          display: block;
+          text-align: center;
+          padding: 20px 20px;
+          background-color: #f8d7da;
+          color: #721c24;} */
+
+          .col.lef {
+        order: 1; 
+        }
+
+        .col.rig {
+        order: 2;
+        }
+
+          .columnpic {
+        float: left;
+        padding: 5px;
+      }
+    
+      .columnskill {
+        float: left;
+        padding-right: 40px;
+        margin-bottom: 20px; 
+      }
+    
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .header {
+        padding-top: 30px;
+        background: #ffffff;
+        height: auto;
+        width: 100%;
+        margin:auto; 
+      }
+
+      .row.top-bottom {
+        display: flex;
+        flex-direction: column;
     }
-  }
+    .column.top-left {
+        flex:1;
+        padding:20px;
+    }
+    .column.top-right {
+        flex:1;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+    }
+      }
+      @media (min-width: 1000px){
+      .desktop-message {
+        display: none;
+      }
+      .columnpic {
+        float: left;
+        padding: 5px;
+      }
+   
+      .column {
+        float: left;
+        padding: 40px;
+      }
+      .columnskill {
+        float: left;
+        padding-right: 40px;
+      }
+      .top-left {
+        padding: 40px; 
+      }
+      .top-right {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+      }
+      .left{width:30%}
+      .middle{width:45%}
+      .right{width:25%}
+      
+      .rowtop {
+    display: grid;
+    grid-template-columns: 40% 60%; 
+    background-color: #f6e0ff;
+    align-items: start; 
+}
 
-  @media (min-width: 768px) 
-  {.desktop-message {
-    display: none;
-  }}
-</style>
-
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .header {
+        padding-top: 30px;
+        background: #ffffff;
+        height: auto;
+        width: 100%;
+        margin:auto; 
+      }
+      }
+      </style>
 </head>
 
 <body>
-	<div class="desktop-message">
+	<!-- <div class="desktop-message">
     <h3>Apologies for any inconvenience. This site is undergoing mobile optimization. For the best experience, please use a desktop. Thank you for your understanding!</h3>
-  </div>
+  </div> -->
     
    <!-- CONTENT-WRAP -->
     <div class="content-filter">  
-        <div style = "position:absolute; left:-110px; top:55px;">
+      <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+        <div class="col lef">
         <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
         </div>
-        
-       
-        <div style = "position:absolute; right:-100px; top:80px;">
+    
+         <div class="col rig">
             <h3>
-                <a class="link-1 navy" href="index.html">home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="link-1 green" href="about.html">about</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="link-1 tango" href="projects.html">projects</a>
-         
-            </h3> </div>
-        
-            
+            <a class="link-1 navy" href="index.html">home</a>&nbsp;&nbsp;
+            <a class="link-1 green" href="about.html">about</a>&nbsp;&nbsp;
+            <a class="link-1 tango" href="projects.html">projects</a>
+            </h3> 
+        </div>
+    </div>
+
         
         <!-- CONTENT -->
-        <div class="content">
-            
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
-            
-
-<style>
-
-.columnpic {
-  float: left;
-  padding: 5px;
-}
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 40px;
-  
-}
-
-.columnskill {
-  float: left;
-  padding-right: 40px;
-  
-}
-
-.top-left {
-  width: 40%;
-}
-
-.top-right {
-  width: 60%;
-}
-    
-    .left{width:30%}
-    .middle{width:45%}
-    .right{width:25%}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-    
-.header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin:auto; 
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-</style>
-                
-                
+        <div class="content-about">
+      <div style = "position:fluid;">
 <div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#f6e0ff; height:453px;">
+    <div class="rowtop top-bottom">
+  <div class="column top-left" style="background-color:#f6e0ff;">
     <h4>Nice to meet you</h4> <br>
             <h1>i'm sharmayne,</h1>
             <a>
@@ -141,19 +174,17 @@
              </a>
   </div>
         
-  <div class="column top-right" style="background-color:#f6e0ff;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/casual.jpg" alt="profile pic"/>
-    
+  <div class="column top-right" style="background-color:#f6e0ff;">
+   <img about class="soft-rounded" src="images/casual.jpg" alt="profile pic"/>
   </div>
 </div>
-                </div>
-    <div class="content-project"> 
-       
+      </div>
+
+    <div class="content-filter"> 
             <br>
       		<h2>How I value-add</h2>
         
         <div class="row">
-  
 <div class="columnskill left" style="height:auto;">
  <h3>Research</h3>
  <a class="button skills rounded">Data Collection</a> <a class="button skills rounded">Data Visualisation</a>
@@ -172,7 +203,7 @@
     <a class="button skills rounded">C#</a>
   </div>
 
-              <div class="columnskill middle" style="height:auto;">
+   <div class="columnskill middle" style="height:auto;">
     <h3>Design</h3>
     <h4>2D Design, Layout</h4>
     <a class="button skills rounded">Figma</a>
@@ -247,12 +278,10 @@
             </a>
             <h4><a class="bold peach text" href="https://www.mfdcsg.com/team">Joseph Cheah, </a>Supervisor & Centre Manager of Montessori for Dementia Care</h4>
             <br> 
-            <div class="row"><div class="columnpic">
-              <img style="width:100%;"class="profile-image superbig soft-rounded" src="images/piano_xn.png"/>
-              </div>
-             <div class="columnpic">
-              <img style="width:100%;"class="profile-image superbig soft-rounded" src="images/piano_yj.png"/>
-             </div></div>
+            <div class="row">
+              <img style="width:100%;"class="superbig soft-rounded" src="images/piano_xn.png"/>
+              <img style="width:100%;"class="superbig soft-rounded" src="images/piano_yj.png"/>
+             </div>
              <h4><a class="bold purple text">Xuan Ning & Yu Jie, </a>my piano students</h4>
             
             
