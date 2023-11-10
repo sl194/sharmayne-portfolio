@@ -21,11 +21,31 @@
     
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <style>
+      @media (max-width: 768px) {
+        .content-filter {
+            display:none}
+        
+      .desktop-message {
+        display: block;
+        text-align: center;
+        padding: 20px 20px;
+        background-color: #f8d7da; /* Adjust the background color as needed */
+        color: #721c24; /* Adjust the text color as needed */
+      }
+    }
+  
+    @media (min-width: 768px) 
+    {.desktop-message {
+      display: none;
+    }}
+  </style>
 </head>
 
 <body>
-	
+	<div class="desktop-message">
+    <h3>Apologies for any inconvenience. This site is undergoing mobile optimization. For the best experience, please use a desktop. Thank you for your understanding!</h3>
+  </div>
     
     <!-- CONTENT-WRAP -->
     <div class="content-filter">  
