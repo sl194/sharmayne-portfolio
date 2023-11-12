@@ -24,130 +24,193 @@
 </head>
 
 <body>
-	
-    
-    <!-- CONTENT-WRAP -->
-    <div class="content-project">  
-        <div style = "position:fixed; left:60px; top:40px;">
-        <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
-        </div>
-        
-       
-        <div style = "position:fixed; right:70px; top:70px;">
+	 <!-- CONTENT-WRAP -->
+   <div class="content-project">  
+    <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+      <div class="col lef">
+      <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
+      </div>
+  
+       <div class="col rig">
+          <h3>
+            <a class="link-1 tango" href="projects.html">return</a>
+          </h3> 
+      </div>
+  </div>
+
+          <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
             <h3>
-                <a class="link-1 tango" href="projects.html">return</a>
-         
+                <a class="link-1 tango" href="#">↑</a>
             </h3> </div>
-            <div style = "position:fixed; right:70px; bottom:70px;">
-              <h3>
-                  <a class="link-1 tango" href="#">㊤↑</a>
-           
-              </h3> </div>
+
          
-        
-        <!-- CONTENT -->
-        <div class="content">
+      
+       
+      
+      <!-- CONTENT -->
+      <div class="content-about">
+
+        <div style = "position:fluid;">
+      
+          <style>
+            @media screen and (max-width: 1200px) {
             
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
+            .col.lef {
+            order: 1; 
+            }
+            
+            .col.rig {
+            order: 2;
+            }
+            
+            .header {
+            padding-top: 30px;
+            background: #ffffff;
+            height: auto;
+            width: 100%;
+            margin:auto; 
+            }
+            
+            .row.top-bottom {
+            display: flex;
+            flex-direction: column;
+            }
+            
+            .column.top-left {
+            flex:1;
+            padding:20px;
+            }
+            
+            .column.top-right {
+            flex:1;
+            padding-left:20px;
+            padding-right:20px;
+            padding-bottom:20px;
+            }
+            }
+            
+            @media (min-width: 1200px){
+            .desktop-message {
+            display: none;
+            }
+            
+            .columnpic {
+            float: left;
+            padding: 5px;
+            }
+            
+            .columnpicright {
+            float: right;
+            padding: 5px;
+            }
+            
+            .column {
+            float: left;
+            padding: 40px;
+            }
+            
+            .top-left {
+            padding: 40px; 
+            }
+              
+            .top-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            }
+              
+            .rowtop {
+            display: grid;
+            grid-template-columns: 40% 60%; 
+            background-color: #e3fff7;
+            align-items: start; 
+            }
+            
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            
+            .header {
+            padding-top: 30px;
+            background: #ffffff;
+            height: auto;
+            width: 100%;
+            margin:auto; 
+            }
+            
+            .left {
+            width: 25%;
+            }
+            
+            .right {
+            width: 75%;
+            }
+            }
+            
+            .video-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+            }
+            
+            .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            }
+            
+            p {
+            text-align: justify;
+            text-justify: inter-word;
+            }
+            
+            .col3{
+              float:left;
+              padding-bottom:10px;
+              padding-top:10px;
+            }
+
+            .oneee {
+              width: 50%;
+              padding-right:10px;
+            }
+               .twooo {
+              width: 50%;
+             
+            }
+            .one{
+              width:33%;
+              padding:10px;
+            }
             
 
-<style>
-
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 40px;
-  
-}
-
-        .col3 {
-  float: left;
-  padding: 10px;
-  
-}
- .one {
-  width: 33%;
-}
-   .two {
-  width: 33%;
-}
-   .three {
-  width: 33%;
-}
-    
-     .oneee {
-  width: 50%;
-}
-   .twooo {
-  width: 50%;
-}
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-}
-    
-.top-left {
-  width: 40%;
-}
-
-.top-right {
-  width: 60%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-    
-.header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin:auto; 
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-</style>
+            </style>
+                          
+                    
+            <div class="header">
+            <div class="rowtop top-bottom">
+            <div class="column top-left" style="background-color:#e3fff7;">
+            <h4>Project</h4> <br>
+                    <h1>BRIDGE Most Promising</h1>
+                    <p>Bridging the gap between consumers, traditional craftspeople & desginers 🤝</p>
+                <br>
+                <h4>Categories</h4>
+                <p>Product Design | Competition | Environment</p>
+            </div>
                 
-                
-<div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#e3fff7; height:453px;">
-    <h4>Project</h4>
-    <h1>BRIDGE Most Promising</h1>
-    <p>Bridging the gap between consumers, traditional craftspeople & desginers 🤝</p>
-      <br>
-      <h4>Categories</h4>
-      <p>Product Design | Competition | Environment</p>
-  </div>
-        
-  <div class="column top-right" style="background-color:#e3fff7;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/bridgehackathon.png" alt="profile pic"/>
-    
-  </div>
-</div>
+            <div class="column top-right" style="background-color:#e3fff7;">
+            <img about class="soft-rounded" src="images/bridgehackathon.png" alt="profile pic"/>
+            </div>
+            </div>
+              </div>
+
    <br>
     <div class="row">
-  <div class="column left" style="background-color:white;">
-<!--    <h2>Column 1</h2>-->
+  <div class="column left" style="background-color:white;margin-bottom: 50px;">
+
       <h4>Organisation</h4>
     <p><a class="azure text" href="https://design.zju.edu.cn/en/bridge">Zhejiang University</a></p>
       <br>
@@ -157,8 +220,8 @@
       <h4>Duration</h4>
     <p>1 month</p>
   </div>
-  <div class="column right" style="background-color:white;">
-<!--    <h2>Column 2</h2>-->
+  <div class="column right" style="background-color:white;margin-bottom: 50px;">
+
       <h4>Project Description</h4>
     <p>In 2020, the outbreak of the COVID-19 pandemic made people think more about what on earth a “normal” world should be. In 2021, there are only nine years left until 2030, the deadline set by the United Nations to achieve the 17 Sustainable Development Goals (SDGs). What actions should we take to build a bridge to a sustainable future?
 
@@ -167,121 +230,57 @@
 <br><br>Concretely, the BRIDGE Action focuses on 5 SDGs. They are “Quality Education”, <a class="bold">“Decent Work and Economic Growth”</a>, “Industry, Innovation and Infrastructure”, “Sustainable Cities and Communities”, and “Sustainable Consumption and Productions”, which will serve as the main design themes and subjects for discussion.
 
 <br><br>The BRIDGE Action is hosted by Zhejiang University under the Sustainability Action Plan: A Global ZJU for Social Good (Z4G). In March 2021, Zhejiang University has launched Z4G in response to the 2030 Agenda for Sustainable Development, aspiring to make a distinctive and positive impact by strengthening its commitment to the SDGs.</p>
-        </div>
+        </div></div>
+        <div class="row">
         
         <h2>Talks</h2>
-           <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bt1.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bt2.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bt3.png"/>
-  </div>
-</div> 
+       
+           <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bt1.png"/>
+          
+           <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bt2.png"/>
+       
+            <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bt3.png"/>
+          
+
         <h2>Deck</h2>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh1.png"/>
-  </div>
+        <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh1.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh2.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh3.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh4.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh5.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh6.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh7.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh8.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh9.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh10.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh11.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh12.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh13.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/bh14.png"/>
         
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh2.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh3.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh4.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh5.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh6.png"/>
-  </div>
-</div> 
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh7.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh8.png"/>
-  </div>
-</div> 
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh9.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh10.png"/>
-  </div>
-</div> 
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh11.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh12.png"/>
-  </div>
-</div> 
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh13.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/bh14.png"/>
-  </div>
-</div> 
+      
        
         
          
           <h2>Prototype</h2>
-        <div style="text-align:center"> <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWHZiHNgOv87GvdWLzmvp0S%2FGO-ON%3Fpage-id%3D0%253A1%26node-id%3D180%253A247%26viewport%3D241%252C48%252C0.25%26scaling%3Dscale-down%26starting-point-node-id%3D139%253A15%26show-proto-sidebar%3D1" allowfullscreen></iframe></div>
-        
-        
+          <div class="video-container">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWHZiHNgOv87GvdWLzmvp0S%2FGO-ON%3Fpage-id%3D0%253A1%26node-id%3D180%253A247%26viewport%3D241%252C48%252C0.25%26scaling%3Dscale-down%26starting-point-node-id%3D139%253A15%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+          </div>
+    
       <h2>Award!</h2>
-         <img style="width:100%" class="soft-rounded" src="images/bridgeresults.png"/><br><p>It was my first time working remotely with international students from all over the world like China, Japan and Korea! Although communication was difficult due to the language barriers, we were eventually able to align our interests and goals and work together to create something we were all proud of :)</p><br><img style="width:100%" class="soft-rounded" src="images/bridgecert.png"/>
-     
-  </div>
-</div>
-</div>           
-
-
-
-                
-       
-        <br><br>
- <div style = "position:relative; margin-top: 5px;margin-right: 30px; text-align: right">
-        <h6><a>made with ❤️💙💚💛💜🧡🤎🤍🖤 by sharmayne</a></h6>
+         <img style="width:100%" class="soft-rounded" src="images/bridgeresults.png"/><br>
+         <p>It was my first time working remotely with international students from all over the world like China, Japan and Korea! Although communication was difficult due to the language barriers, we were eventually able to align our interests and goals and work together to create something we were all proud of :)</p>
+         <br><img style="width:100%" class="soft-rounded" src="images/bridgecert.png"/>
+         <br><br><br><br><br>
+        </div>  
         </div>
-        
+        </div>           
         </div>
-    	<!-- CONTENT -->
+              <!-- CONTENT -->
+        </div>
+            <!-- CONTENT-WRAP -->
+            <!-- SCRIPTS -->
+          <script src="js/main.js"></script>
         
-    </div>
-    <!-- CONTENT-WRAP -->
-	
-	
-    
-    
-    <!-- SCRIPTS -->
-	<script src="js/main.js"></script>
-    
-
-</body>
-</html>
+        </body>
+        </html>

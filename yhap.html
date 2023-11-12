@@ -24,130 +24,188 @@
 </head>
 
 <body>
-	
-    
-    <!-- CONTENT-WRAP -->
-    <div class="content-project">  
-        <div style = "position:fixed; left:60px; top:40px;">
-        <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
-        </div>
-        
-       
-        <div style = "position:fixed; right:70px; top:70px;">
+	<!-- CONTENT-WRAP -->
+  <div class="content-project">  
+    <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+      <div class="col lef">
+      <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
+      </div>
+  
+       <div class="col rig">
+          <h3>
+            <a class="link-1 tango" href="projects.html">return</a>
+          </h3> 
+      </div>
+  </div>
+
+          <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
             <h3>
-                <a class="link-1 tango" href="projects.html">return</a>
-         
+                <a class="link-1 tango" href="#">↑</a>
             </h3> </div>
-        
-            <div style = "position:fixed; right:70px; bottom:70px;">
-              <h3>
-                  <a class="link-1 tango" href="#">㊤↑</a>
+
+         
+      
+       
+      
+      <!-- CONTENT -->
+      <div class="content-about">
+
+        <div style = "position:fluid;">
+      
+          <style>
+            @media screen and (max-width: 1200px) {
+            
+            .col.lef {
+            order: 1; 
+            }
+            
+            .col.rig {
+            order: 2;
+            }
+            
+            .header {
+            padding-top: 30px;
+            background: #ffffff;
+            height: auto;
+            width: 100%;
+            margin:auto; 
+            }
+            
+            .row.top-bottom {
+            display: flex;
+            flex-direction: column;
+            }
+            
+            .column.top-left {
+            flex:1;
+            padding:20px;
+            }
+            
+            .column.top-right {
+            flex:1;
+            padding-left:20px;
+            padding-right:20px;
+            padding-bottom:20px;
+            }
+            }
+            
+            @media (min-width: 1200px){
+            .desktop-message {
+            display: none;
+            }
+            
+            .columnpic {
+            float: left;
+            padding: 5px;
+            }
+            
+            .columnpicright {
+            float: right;
+            padding: 5px;
+            }
+            
+            .column {
+            float: left;
+            padding: 40px;
+            }
+            
+            .top-left {
+            padding: 40px; 
+            }
+              
+            .top-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            }
+              
+            .rowtop {
+            display: grid;
+            grid-template-columns: 40% 60%; 
+            background-color: #fffdbf;
+            align-items: start; 
+            }
+            
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            
+            .header {
+            padding-top: 30px;
+            background: #ffffff;
+            height: auto;
+            width: 100%;
+            margin:auto; 
+            }
+            
+            .left {
+            width: 25%;
+            }
+            
+            .right {
+            width: 75%;
+            }
+            }
+            
+            .video-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+            }
+            
+            .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            }
+            
+            p {
+            text-align: justify;
+            text-justify: inter-word;
+            }
+            
+            .col3{
+              float:left;
+         
            
-              </h3> </div>
-        
-        <!-- CONTENT -->
-        <div class="content">
-            
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
-            
+            }
 
-<style>
-
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 40px;
-  
-}
-
-        .col3 {
-  float: left;
-  padding: 10px;
-  
-}
- .one {
-  width: 33%;
-}
-   .two {
-  width: 33%;
-}
-   .three {
-  width: 33%;
-}
-    
-     .oneee {
-  width: 50%;
-}
-   .twooo {
-  width: 50%;
-}
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-}
-    
-.top-left {
-  width: 40%;
-}
-
-.top-right {
-  width: 60%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-    
-.header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin:auto; 
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-</style>
+            .oneee {
+              width: 50%;
+              /* padding-right:10px; */
+            }
+               .twooo {
+              width: 50%;
+               
+             
+            }
+            </style>
+                          
+                    
+            <div class="header">
+            <div class="rowtop top-bottom">
+            <div class="column top-left" style="background-color:#fffdbf;">
+            <h4>Project</h4> <br>
+                    <h1>Diabetes Awareness</h1>
+                    <p>Imparting knowledge to others after learning more about diabetes 🫀</p>
+                <br>
+                <h4>Categories</h4>
+                <p>Volunteering | Product Design | Graphics</p>
+            </div>
                 
-                
-<div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#fffdbf; height:453px;">
-    <h4>Project</h4>
-    <h1>Diabetes Awareness</h1>
-    <p>Imparting knowledge to others after learning more about diabetes 🫀</p>
-      <br>
-      <h4>Categories</h4>
-      <p>Volunteering | Product Design | Graphics</p>
-  </div>
-        
-  <div class="column top-right" style="background-color:#fffdbf;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/yhap.png" alt="profile pic"/>
-    
-  </div>
-</div>
+            <div class="column top-right" style="background-color:#fffdbf;">
+            <img about class="soft-rounded" src="images/yhap.png" alt="profile pic"/>
+            </div>
+            </div>
+              </div>
+               
    <br>
     <div class="row">
-  <div class="column left" style="background-color:white;">
-<!--    <h2>Column 1</h2>-->
+  <div class="column left" style="background-color:white;margin-bottom: 50px;">
+
       <h4>Organisation</h4>
     <p><a class="yellow text" href="http://publichealthservice.org/young-health-ambassadors-programme">Public Health Service</a></p>
       <br>
@@ -157,83 +215,64 @@
       <h4>Duration</h4>
     <p>A few months</p>
   </div>
-  <div class="column right" style="background-color:white;">
-<!--    <h2>Column 2</h2>-->
+  <div class="column right" style="background-color:white;margin-bottom: 50px;">
+
       <h4>Project Description</h4>
     <p>YHAP aims to cultivate our youth into Health Ambassadors, positively influencing their community to adopt healthy lifestyle practices. Through our programme, the youth will be empowered with the relevant health knowledge as well as the platforms on which to share with the general public, which truly enables them to become ambassadors of health for their friends, families and communities. This is achieved through two complementary stages - health talks and health projects.<br><br>I was motivated to join this project as many of my family members are plagued with diabetes. Hence, during this programme, when we were taught about diabetes, it was very eye-opening and I shared what I learnt with my family members too. The first part was educating us about diabetes, and then we were tasked to raise awareness of this issue to the general public, and more specifically among elderly.</p>
         </div>
-        
+        </div>
+        <div class="row">
         <h2>Posters</h2>
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/YHAP_3%20(poster%201).jpeg"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/YHAP_3%20(poster%202).jpeg"/>
-  </div>
-</div> 
+        <div class="row">
+          <div class="columnpic" style="background-color:white;margin-bottom: 25px;">
+           <img style="width:100%; object-fit: contain;" class="profile-image supermaxbig soft-rounded" src="images/YHAP_3%20(poster%201).jpeg"/>
+          </div>
+                
+          <div class="columnpic" style="background-color:white;margin-bottom: 25px;">
+           <img style="width:100%; object-fit: contain;" class="profile-image supermaxbig soft-rounded" src="images/YHAP_3%20(poster%202).jpeg"/>
+          </div>
+        </div> 
+
         
          <h2>Game</h2>
         <p>To help the public (especially the elderly), get more acquainted with the signs and symptoms of diabetes, I designed a deck of cards with the signs and symptoms in English and Chinese such that different demographics would be able to read them. On the back of the cards, there are circles and crosses that indicate which are correct or wrong.</p>
+          <br>
           <div class="row">
   <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/yhapgame1.png"/>
+   <img style="width:100%; object-fit: cover;" class="no-rounded" src="images/yhapgame1.png"/>
   </div>
         
   <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/yhapgame2.png"/>
+   <img style="width:100%; object-fit: cover;" class="no-rounded" src="images/yhapgame2.png"/>
   </div>
-</div> 
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/yhapgame3.png"/>
+
+
+  <div class="col3 oneee" style="background-color:whitema;margin-bottom: 25px;">
+   <img style="width:100%; object-fit: cover;" class="no-rounded" src="images/yhapgame3.png"/>
   </div>
         
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/yhapgame4.png"/>
+  <div class="col3 twooo" style="background-color:white;margin-bottom: 25px;">
+   <img style="width:100%; object-fit: cover;" class="no-rounded" src="images/yhapgame4.png"/>
   </div>
 </div> 
 
           
-        
+        <br>
       <h2>Reflections</h2>
         <p>I really learnt a lot about diabetes through this experience and had fun interacting with the public in different languages to help them understand the signs, symptoms and complications of diabetes and useful tips they can incorporate into their daily lives for them to lead more active and healthier lifestyles.</p>
-          <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/yhap%20grp1.jpg"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/yhap%20grp2.JPG"/>
-  </div>
-</div> 
-     
-  </div>
+        <br><img style="width:100%; object-fit: contain;"class="soft-rounded" src="images/yhap%20grp1.jpg"/>
+        <br><img style="width:100%; object-fit: contain;"class="soft-rounded" src="images/yhap%20grp2.jpg"/>
+      
+<br><br><br><br><br>
+</div>  
 </div>
 </div>           
-
-
-
-                
-       
-        <br><br>
- <div style = "position:relative; margin-top: 5px;margin-right: 30px; text-align: right">
-        <h6><a>made with ❤️💙💚💛💜🧡🤎🤍🖤 by sharmayne</a></h6>
-        </div>
-        
-        </div>
-    	<!-- CONTENT -->
-        
-    </div>
+</div>
+      <!-- CONTENT -->
+</div>
     <!-- CONTENT-WRAP -->
-	
-	
-    
-    
     <!-- SCRIPTS -->
-	<script src="js/main.js"></script>
-    
+  <script src="js/main.js"></script>
 
 </body>
 </html>

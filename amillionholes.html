@@ -27,137 +27,173 @@
 
 
 <body>
+ <!-- CONTENT-WRAP -->
+ <div class="content-project">  
+  <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+    <div class="col lef">
+    <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
+    </div>
 
+     <div class="col rig">
+        <h3>
+          <a class="link-1 tango" href="projects.html">return</a>
+        </h3> 
+    </div>
+</div>
 
-    <!-- CONTENT-WRAP -->
-    <div class="content-project">  
-        <div style = "position:fixed; left:60px; top:40px;">
-        <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
-        </div>
-        
+        <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
+          <h3>
+              <a class="link-1 tango" href="#">↑</a>
+          </h3> </div>
+
        
-        <div style = "position:fixed; right:70px; top:70px;">
-            <h3>
-                <a class="link-1 tango" href="projects.html">return</a>
-         
-            </h3> </div>
+    
+     
+    
+    <!-- CONTENT -->
+    <div class="content-about">
 
-            <div style = "position:fixed; right:70px; bottom:70px;">
-              <h3>
-                  <a class="link-1 tango" href="#">㊤↑</a>
-           
-              </h3> </div>
-
-           
-        
-         
-        
-        <!-- CONTENT -->
-        <div class="content">
-            
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
-            
+      <div style = "position:fluid;">
+    
+      
 
 <style>
+@media screen and (max-width: 1200px) {
 
+.col.lef {
+order: 1; 
+}
 
-/* Create two unequal columns that floats next to each other */
+.col.rig {
+order: 2;
+}
+
+.header {
+padding-top: 30px;
+background: #ffffff;
+height: auto;
+width: 100%;
+margin:auto; 
+}
+
+.row.top-bottom {
+display: flex;
+flex-direction: column;
+}
+
+.column.top-left {
+flex:1;
+padding:20px;
+}
+
+.column.top-right {
+flex:1;
+padding-left:20px;
+padding-right:20px;
+padding-bottom:20px;
+}
+}
+
+@media (min-width: 1200px){
+.desktop-message {
+display: none;
+}
+
+.columnpic {
+float: left;
+padding: 5px;
+}
+
+.columnpicright {
+float: right;
+padding: 5px;
+}
+
 .column {
-  float: left;
-  padding: 40px;
-  
+float: left;
+padding: 40px;
 }
 
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-}
-    
-.cone {
-  width: 33%;
-      padding: 5px;
-}
-
-.ctwo {
-  width: 34%;
-      padding: 5px;
-}
-    
-.cthree {
-  width: 33%;
-      padding: 5px;
-}
-    
 .top-left {
-  width: 40%;
+padding: 40px; 
 }
 
 .top-right {
-  width: 60%;
-}
-    
-.columnpic {
-  float: left;
-  padding: 5px;
-}
-    
-    .columnpicright {
-  float: right;
-  padding: 5px;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
-/* Clear floats after the columns */
+.rowtop {
+display: grid;
+grid-template-columns: 40% 60%; 
+background-color: #fae9d7;
+align-items: start; 
+}
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
-    
+
 .header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin: auto; 
+padding-top: 30px;
+background: #ffffff;
+height: auto;
+width: 100%;
+margin:auto; 
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.left {
+width: 25%;
 }
 
+.right {
+width: 75%;
+}
+}
+
+.video-container {
+position: relative;
+padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+p {
+text-align: justify;
+text-justify: inter-word;
+}
 </style>
-                
-                
+            
+      
 <div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#fae9d7; height:453px;">
-    <h4>Project</h4>
-    <h1>A Million Holes</h1>
-    <p>Ceiling panels reborn as dynamic louvres in airport art installation 🌈</p>
-      <br>
-      <h4>Categories</h4>
-      <p>Architecture | Coding</p>
-  </div>
-        
-  <div class="column top-right" style="background-color:#fae9d7;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/amh_main.png" alt="profile pic"/>
-    
-  </div>
+<div class="rowtop top-bottom">
+<div class="column top-left" style="background-color:#fae9d7;">
+<h4>Project</h4> <br>
+      <h1>A Million Holes</h1>
+      <p>Ceiling panels reborn as dynamic louvres in airport art installation 🌈</p>
+  <br>
+  <h4>Categories</h4>
+  <p>Architecture | Coding</p>
 </div>
+  
+<div class="column top-right" style="background-color:#fae9d7;">
+<img about class="soft-rounded" src="images/codesign_main.gif" alt="profile pic"/>
+</div>
+</div>
+</div>      
+     
    <br>
     <div class="row">
-  <div class="column left" style="background-color:white;">
+  <div class="column left" style="background-color:white; margin-bottom: 50px;">
 <!--    <h2>Column 1</h2>-->
       <h4>Organisation</h4>
       <p>SUTD Term 8 <a class="peach text" href="https://asd.sutd.edu.sg/programme/bachelor-of-science-architecture-and-sustainable-design/courses/20224-artificial-architectural-intelligences-in-design/">Artificial & Architectural Intelligences in Design</a></p>
@@ -181,7 +217,9 @@
         <h2>Outline</h2>
         <h3><a class="peach text" href="#sa">Site Analysis</a> · <a class="peach text" href="#c">Concept</a> · <a class="peach text" href="#mt">Material Testing</a> · <a class="peach text" href="#pt">Projection Testing</a> · <a class="peach text" href="#sd">Shape Development</a> · <a class="peach text" href="#pd">Prototype Development</a> · <a class="peach text" href="#fd">Final Design</a></h3>
         <br>
-        <iframe width="100%" height="800" src="https://www.youtube.com/embed/_sMC6lK27oE" title="A Million Holes: Behind-the-scenes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/_sMC6lK27oE"title="A Million Holes: Behind-the-scenes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <br><br>
         <img id="sa" style="width:100%;"class="profile-image ultrabig soft-rounded" src="images/amh_siteanalysis.png"/>
         <img id='c' style="width:100%;"class="profile-image ultrabig soft-rounded" src="images/amh_concept.png"/>
@@ -219,42 +257,16 @@
         <img style="width:100%;"class="profile-image ultrabig soft-rounded" src="images/amh_setup5.gif"/>
         <img style="width:100%;"class="profile-image ultrabig soft-rounded" src="images/amh_prototype3.png"/>
         <img style="width:100%;"class="profile-image ultrabig soft-rounded" src="images/amh_prototype.png"/>
-        
-
+        <br><br><br><br><br>
+      </div>  
+      </div>
+      </div>           
+      </div>
+            <!-- CONTENT -->
+      </div>
+          <!-- CONTENT-WRAP -->
+          <!-- SCRIPTS -->
+        <script src="js/main.js"></script>
       
-        
-
-<!--
-    <h2>Reflections</h2>
-    <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/jfl%20grab.png"/><br>
-      <p>Interning at Grab was life-changing. I learnt so, so much and met so many wonderful people from really diverse backgrounds which were all very willing to share their experiences, insights and advice! I'm very grateful to have had the opportunity to work on so many important projects and improve the experience of our millions of users! Special thanks to my mentor <a class="green text" href="https://sg.linkedin.com/in/an-drew">Andrew</a> and <a class="green text" href="https://sg.linkedin.com/in/vikrammanagoli">Vikram</a> for their immense support, guidance and belief in me, without which, I wouldn't have been able to make it so far!</p>
--->
-        </div>
-      
-</div>
-</div>           
-
- 
-        <br><br>
- <div style = "position:relative; margin-top: 5px;margin-right: 30px; text-align: right">
-        <h6><a>made with ❤️💙💚💛💜🧡🤎🤍🖤 by sharmayne</a></h6>
-        </div>
-        
-
-      
-
-        </div>
-    	<!-- CONTENT -->
-       
-
-    </div>
-    <!-- CONTENT-WRAP -->
-	
-	
-    
-    
-    <!-- SCRIPTS -->
-	<script src="js/main.js"></script>
-
-</body>
-</html>
+      </body>
+      </html>

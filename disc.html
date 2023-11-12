@@ -25,137 +25,169 @@
 </head>
 
 <body>
-	
-    
-    <!-- CONTENT-WRAP -->
-    <div class="content-project">  
-        <div style = "position:fixed; left:60px; top:40px;">
-        <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
-        </div>
-        
-       
-        <div style = "position:fixed; right:70px; top:70px;">
-            <h3>
-                <a class="link-1 tango" href="projects.html">return</a>
-         
-            </h3> </div>
-            <div style = "position:fixed; right:70px; bottom:70px;">
-              <h3>
-                  <a class="link-1 tango" href="#">㊤↑</a>
-           
-              </h3> </div>
-        
-         
-        
-        <!-- CONTENT -->
-        <div class="content">
-            
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
-            
-
-<style>
-
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 40px;
+	 <!-- CONTENT-WRAP -->
+   <div class="content-project">  
+    <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+      <div class="col lef">
+      <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
+      </div>
   
-}
+       <div class="col rig">
+          <h3>
+            <a class="link-1 tango" href="projects.html">return</a>
+          </h3> 
+      </div>
+  </div>
 
-.left {
-  width: 25%;
-}
+          <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
+            <h3>
+                <a class="link-1 tango" href="#">↑</a>
+            </h3> </div>
+            
+      <!-- CONTENT -->
+      <div class="content-about">
+        <div style = "position:fluid;">
+            
 
-.right {
-  width: 75%;
-}
-    
-.cone {
-  width: 33%;
-      padding: 5px;
-}
-
-.ctwo {
-  width: 34%;
-      padding: 5px;
-}
-    
-.cthree {
-  width: 33%;
-      padding: 5px;
-}
-    
-.top-left {
-  width: 40%;
-}
-
-.top-right {
-  width: 60%;
-}
-    
-.columnpic {
-  float: left;
-  padding: 5px;
-}
-    
-    .columnpicright {
-  float: right;
-  padding: 5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-    
-.header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin:auto; 
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-</style>
+          <style>
+            @media screen and (max-width: 1200px) {
+            
+            .col.lef {
+              order: 1; 
+            }
+            
+            .col.rig {
+              order: 2;
+            }
+            
+            .header {
+              padding-top: 30px;
+              background: #ffffff;
+              height: auto;
+              width: 100%;
+              margin:auto; 
+            }
+            
+            .row.top-bottom {
+              display: flex;
+              flex-direction: column;
+            }
+            
+            .column.top-left {
+              flex:1;
+              padding:20px;
+            }
+            
+            .column.top-right {
+              flex:1;
+              padding-left:20px;
+              padding-right:20px;
+              padding-bottom:20px;
+            }
+            }
+            
+            @media (min-width: 1200px){
+            .desktop-message {
+              display: none;
+            }
+            
+            .columnpic {
+              float: left;
+              padding: 5px;
+            }
+            
+            .columnpicright {
+              float: right;
+              padding: 5px;
+            }
+            
+            .column {
+              float: left;
+              padding: 40px;
+            }
+              
+            .top-left {
+              padding: 40px; 
+            }
                 
+            .top-right {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+            }
                 
+            .rowtop {
+              display: grid;
+              grid-template-columns: 40% 60%; 
+              background-color: #c9fffd;
+              align-items: start; 
+            }
+              
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            .header {
+              padding-top: 30px;
+              background: #ffffff;
+              height: auto;
+              width: 100%;
+              margin:auto; 
+            }
+            
+            .left {
+              width: 25%;
+            }
+            
+            .right {
+              width: 75%;
+            }
+            }
+              
+            .video-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+            }
+            
+            .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            }
+
+            p {
+            text-align: justify;
+            text-justify: inter-word;
+            }
+            </style>
+
 <div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#c9fffd; height:453px;">
-    <h4>Project</h4>
-    <h1>Elderly memory game</h1>
-    <p>Dual-language cognitive training intervention for semantic memory 🧠</p>
+  <div class="rowtop top-bottom">
+<div class="column top-left" style="background-color:#c9fffd;">
+  <h4>Project</h4> <br>
+          <h1>Elderly memory game</h1>
+          <p>Dual-language cognitive training intervention for semantic memory 🧠</p>
       <br>
       <h4>Categories</h4>
       <p>Product Design | Research</p>
-  </div>
-        
-  <div class="column top-right" style="background-color:#c9fffd;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/disc_main.gif" alt="profile pic"/>
-    
-  </div>
 </div>
+      
+<div class="column top-right" style="background-color:#c9fffd;">
+ <img about class="soft-rounded" src="images/disc_main.gif" alt="profile pic"/>
+</div>
+</div>
+    </div>
+              
    <br>
     <div class="row">
-  <div class="column left" style="background-color:white;">
+  <div class="column left" style="background-color:white; margin-bottom: 50px;">
 <!--    <h2>Column 1</h2>-->
       <h4>Organisation</h4>
-      <p><a class="azure text" href="">Graduate Research</a></p>
+      <p><a class="azure text" href="https://people.sutd.edu.sg/~quin/">SUTD Language and Social Cognition Lab</a></p>
       <br>
       <h4>Role</h4>
     <p>Researcher</p>
@@ -176,91 +208,95 @@
       <br><br>Our results from the intervention study showed that, in contrast to those in the control group (i.e., without DISC training), the cognitive functioning in the older adults who underwent DISC training either improved (e.g., RAVLT 5th recall trial in healthy older adults) or maintained (e.g., local cost in task-switching task in dementia patients). We also asked the caregivers of dementia participants to complete the Modified Barthel Index (MBI) assessment tool to measure their level of caregiver burden before and after the program, and the caregivers of the participants with dementia reported ~15% less burdened post program. Staff from the community day care partners who ran the sessions also provided feedback to their experience with running the app with their clients. All staff who participated found the app to be beneficial to their clients, scoring an average of 4.38 (out of 5). Two-third and three out of four of the staff felt they were given more time to complete other duties and felt they were able to perform other duties while their clients were playing the app, respectively.
       <br><br>Overall, our study results show that playing the Ami app has multiple benefits. Firstly, it can promote elders' cognitive health, secondly, it can improve elders' verbal memory, and thirdly, it can increase elders' interest towards technology use.
     </p>
-        </div>
-  
-      <h2>Related Works</h2>Our proposed intervention was originally based on empirical evidence of areas of cognition – verbal fluency, that is highly susceptible to the deleterious effects of ageing and is evident in early stages of dementia (Gomez & White, 2006; Nutter-Upham et al., 2008). Moreover, as our results from the previous research phase showed that DISC may also benefit non-verbal cognitive abilities, such as cognitive flexibility, in dementia patient, we will additionally introduce cognitive trainings that target non-verbal cognitive abilities to DISC II. 
+        </div></div>
 
-      Imposing a dual-language load as a cognitive challenge in the cognitive training intervention is based on many studies that show a neuroprotective factor of bilingualism in cognitive and pathological ageing (Bialystok et al., 2007; Luk et al., 2011; Olulade et al., 2016). Work from SUTD's Cognition Lab also showed that active bilingualism, indicated by more balanced usage and less frequent language switching, were associated with better performance in goal maintenance in Singaporean older adults (Chan et al., 2020). The adaptive control hypothesis (Green & Abutalebi, 2013) further posits that the bilinguals’ control processes would adapt according to the cognitive demands they face during the conversational interaction. Green and Abutalebi (2013) highlighted three interactional contexts: 1) single-language context; 2) dual-language context; and 3) dense code-switching context. Among these three contexts, dual-language context is suggested to impose the highest cognitive demand. The cognitive benefit of dual-language context has been applied to the education system for children (i.e., dual-language immersive education; Christian, 2016; Werblow et al., 2020), and has received positive outcomes (Cobb et al., 2006; S. Park et al., 2023; Watzinger-Tharp et al., 2018). 
-      
-       <br>
+        <div class="row">
+      <h2>Related Works</h2>
+      <p>Our proposed intervention was originally based on empirical evidence of areas of cognition – verbal fluency, that is highly susceptible to the deleterious effects of ageing and is evident in early stages of dementia (Gomez & White, 2006; Nutter-Upham et al., 2008). Moreover, as our results from the previous research phase showed that DISC may also benefit non-verbal cognitive abilities, such as cognitive flexibility, in dementia patient, we will additionally introduce cognitive trainings that target non-verbal cognitive abilities to DISC II. Imposing a dual-language load as a cognitive challenge in the cognitive training intervention is based on many studies that show a neuroprotective factor of bilingualism in cognitive and pathological ageing (Bialystok et al., 2007; Luk et al., 2011; Olulade et al., 2016). Work from SUTD's Cognition Lab also showed that active bilingualism, indicated by more balanced usage and less frequent language switching, were associated with better performance in goal maintenance in Singaporean older adults (Chan et al., 2020). The adaptive control hypothesis (Green & Abutalebi, 2013) further posits that the bilinguals’ control processes would adapt according to the cognitive demands they face during the conversational interaction. Green and Abutalebi (2013) highlighted three interactional contexts: 1) single-language context; 2) dual-language context; and 3) dense code-switching context. Among these three contexts, dual-language context is suggested to impose the highest cognitive demand. The cognitive benefit of dual-language context has been applied to the education system for children (i.e., dual-language immersive education; Christian, 2016; Werblow et al., 2020), and has received positive outcomes (Cobb et al., 2006; S. Park et al., 2023; Watzinger-Tharp et al., 2018).
+      </p>
        
        <h2>Overview of Game</h2>
        <img style="width:100%; object-fit: contain;" class="profile-image ultrabig soft-rounded" src="images/discfeatures.png"/>
-       <br>The Ami app has different games that target different cognitive functions. It also has adaptive prompts and various levels of difficulty. Ami app currently has six languages or dialects for players to choose from: English, Mandarin, Hokkien, Cantonese, Malay and Tamil. What sets our game apart is its dual-language feature. Using two languages to play the Ami app can be more beneficial compared to using one language only. The Ami app also has several user-friendly features, including the avatar Ami, which you can click on for help during the game, as well as positive feedback to encourage you while playing.
+       <br><p>The Ami app has different games that target different cognitive functions. It also has adaptive prompts and various levels of difficulty. Ami app currently has six languages or dialects for players to choose from: English, Mandarin, Hokkien, Cantonese, Malay and Tamil. What sets our game apart is its dual-language feature. Using two languages to play the Ami app can be more beneficial compared to using one language only. The Ami app also has several user-friendly features, including the avatar Ami, which you can click on for help during the game, as well as positive feedback to encourage you while playing.
        <br><br>
        <img style="width:100%; object-fit: contain;" class="profile-image ultrabig soft-rounded" src="images/zerlina pic 1.png"/>
-      <br>The Ami app has three games, namely <a class="azure text" href="#game1">"Find"</a>, <a class="azure text" href="#game2">"Match"</a>, and <a class="azure text" href="#game3">"Speak"</a>.
+      <br>The Ami app has three games, namely <a class="azure text" href="#game1">"Find"</a>, <a class="azure text" href="#game2">"Match"</a>, and <a class="azure text" href="#game3">"Speak"</a>.</p>
 
         <h2 id="game1">Game 1: Find (Object Categorization)</h2>
         <img style="width:100%; object-fit: contain;" class="profile-image ultrabig soft-rounded" src="images/zerlina pic 4.png"/>
-        <br>Ami will first say the name of an object category. From the 12 objects provided on the screen, users need to find and click on the four correct objects that match the category that Ami asks them to find. For example, here Ami asks for objects in the category vegetable, so users need to click the beetroot and the cabbage as the correct answers. During the game, users can click on Ami any time for help.  
-        <br>
+        <br><p>Ami will first say the name of an object category. From the 12 objects provided on the screen, users need to find and click on the four correct objects that match the category that Ami asks them to find. For example, here Ami asks for objects in the category vegetable, so users need to click the beetroot and the cabbage as the correct answers. During the game, users can click on Ami any time for help.  
+      </p>
         
           <h2 id="game2">Game 2: Speak (Verbal Fluency)</h2>
           <img style="width:100%; object-fit: contain;" class="profile-image ultrabig soft-rounded" src="images/zerlina pic 5.png"/>
-        <br><a class="bold">Dual-language mode:</a> Users have to get ready to speak in two languages, one word after another, according to the theme Ami says. For instance, if Ami says “Transport”, and the user has selected two languages, namely English and Chinese, then the user should say: Car 火车 Bicycle 摩托车 etc. until time is up.
+        <br>
+        <p><a class="bold">Dual-language mode:</a> Users have to get ready to speak in two languages, one word after another, according to the theme Ami says. For instance, if Ami says “Transport”, and the user has selected two languages, namely English and Chinese, then the user should say: Car 火车 Bicycle 摩托车 etc. until time is up.
+        </p>
 
-        <br><a class="bold">Single-language mode:</a> Users have to get ready to say as many words as they can within the time limit according to the theme Ami says.
-        <br>Similarly, during the game, users can click on Ami any time for help.<br>
+        <br><p><a class="bold">Single-language mode:</a> Users have to get ready to say as many words as they can within the time limit according to the theme Ami says. Similarly, during the game, users can click on Ami any time for help.</p>
         
             <h2 id="game3">Game 3: Match (Utility of Things)</h2>
             <img style="width:100%; object-fit: contain;" class="profile-image ultrabig soft-rounded" src="images/zerlina pic 3.png"/>
-        <br>Ami will first say the name of a utilty category. From two images on the screen, users need to determine which falls into the category mentioned by Ami. For instance, here Ami asks for what can be used for cooking. Users will then need to click on the vegetable as the correct answer. Similarly, during the game, users can click on Ami any time for help.
-        <br>
+        <br><p>Ami will first say the name of a utilty category. From two images on the screen, users need to determine which falls into the category mentioned by Ami. For instance, here Ami asks for what can be used for cooking. Users will then need to click on the vegetable as the correct answer. Similarly, during the game, users can click on Ami any time for help.
+        </p>
 
         <h2>Official Launch (Sep 2023)</h2>
-        <div class="row"><div class="columnpic">
-          <img style="width:100%; object-fit: contain;" class="profile-image medbig soft-rounded" src="images/disc_launch.JPG"/>
-       </div><div class="columnpic">
-        <img style="width:100%; object-fit: contain;" class="profile-image medbig soft-rounded" src="images/disc_imok.JPG"/>
-     </div><div class="columnpic">
-      <img style="width:100%; object-fit: contain;" class="profile-image medbig soft-rounded" src="images/disc_explain.JPG"/>
-   </div><div class="columnpic">
-          <img style="width:100%; object-fit: contain;" class="profile-image medbig soft-rounded" src="images/disc_playing.JPG"/>
-         </div><div class="columnpic">
-        <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/disc_goh.JPG"/>
-      </div> <div class="columnpic">
-        <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/disc_prize.JPG"/>
-      </div> <div class="columnpic">
-      <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/discdemo.png"/>
-    </div></div>
-      <br>Guests-of-honour including the Deputy Prime Minister Mr Heng Swee Keat, SUTD Provost Professor Phoon Kok Kwang, and Lions Befrienders' Chairman PDG Mr Tay, graced the launch event which I officiated in both English and Chinese to cater to the elderly audience.
-      <br>
-        <h2>Future Works</h2>
-        A paper targeting for submission to the International Journal of Human-Computer Studies is currently in the works. Furthermore, grant applications have been filed to support the improvement of the game's UI, the development of an iOS version/upgrading of Android version, the development of a conversational agent in parallel with the Ami app, as well as the commercialization of this app.
-        <div class="row"><div class="columnpic">
-           <img style="width:100%; object-fit: contain;" class="profile-image medbig soft-rounded" src="images/discfuture1.png"/>
-        </div><div class="columnpic">
-           <img style="width:100%; object-fit: contain;" class="profile-image medbig soft-rounded" src="images/discfuture2.png"/>
+        <div class="row">
+          <div class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/disc_launch.JPG"/>
+          <p style="margin-bottom: 25px;">Me officiating the launch of the Ami app</p>
           </div>
-          <!-- <div class="columnpic">
-            <img style="width:100%; object-fit: contain;" class="profile-image medbig soft-rounded" src="images/discfuture3.png"/>
-           </div> -->
-          </div>
-          
-        
-
-<!--
-    <h2>Reflections</h2>
-    <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/jfl%20grab.png"/><br>
-      <p>Interning at Grab was life-changing. I learnt so, so much and met so many wonderful people from really diverse backgrounds which were all very willing to share their experiences, insights and advice! I'm very grateful to have had the opportunity to work on so many important projects and improve the experience of our millions of users! Special thanks to my mentor <a class="green text" href="https://sg.linkedin.com/in/an-drew">Andrew</a> and <a class="green text" href="https://sg.linkedin.com/in/vikrammanagoli">Vikram</a> for their immense support, guidance and belief in me, without which, I wouldn't have been able to make it so far!</p>
--->
+         <div class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/disc_imok.JPG"/>
+          <p style="margin-bottom: 25px;">How to access the Ami app</p>
+         </div>
+         <div class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/disc_explain.JPG"/>
+          <p style="margin-bottom: 25px;">How to play Game 1</p>
+         </div>
+         <div class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/disc_playing.JPG"/>
+          <p style="margin-bottom: 25px;">Elderly playing games on the Ami app</p>
+         </div>
+         <div class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/disc_goh.JPG"/>
+          <p style="margin-bottom: 25px;">Guests-of-honour interacting with elderly</p>
+         </div>
+         <div class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/disc_prize.JPG"/>
+          <p style="margin-bottom: 25px;">DPM Heng presenting prize to elderly</p>
+         </div>
+         <div class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/discdemo.png"/>
+          <p style="margin-bottom: 25px;">Ami App Demo QR code</p>
+         </div>
         </div>
-      
+
+      <p>Guests-of-honour including the Deputy Prime Minister Mr Heng Swee Keat, SUTD Provost Professor Phoon Kok Kwang, Lions Befrienders' Chairman PDG Mr Tay, and IceKredit CEO Mr Gu Lingyun, graced the launch event which I officiated in both English and Chinese to cater to the elderly audience.
+      </p>
+
+        <h2>Future Works</h2>
+        <p>A paper targeting for submission to the International Journal of Human-Computer Studies is currently in the works. Furthermore, grant applications have been filed to support the improvement of the game's UI, the development of an iOS version/upgrading of Android version, the development of a conversational agent in parallel with the Ami app, as well as the commercialization of this app.
+        </p><br>
+        <div class="row">
+          <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image medbig soft-rounded" src="images/discfuture1.png"/>
+           </div>
+           <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image medbig soft-rounded" src="images/discfuture2.png"/>
+           </div>
+           <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image medbig soft-rounded" src="images/discfuture3.png"/>
+           </div>
+          </div>
+          <br><br><br><br><br>
+</div> 
 </div>
 </div>           
-
- 
-        <br><br>
- <div style = "position:relative; margin-top: 5px;margin-right: 30px; text-align: right">
-        <h6><a>made with ❤️💙💚💛💜🧡🤎🤍🖤 by sharmayne</a></h6>
-        </div>
-        
-        </div>
-    	<!-- CONTENT -->
-        
-    </div>
-    <!-- CONTENT-WRAP -->
+</div>
+<!-- CONTENT -->
+</div>
+<!-- CONTENT-WRAP -->
 	
 	
     

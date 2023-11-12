@@ -24,108 +24,173 @@
 </head>
 
 <body>
-	
-    
-    <!-- CONTENT-WRAP -->
-    <div class="content-project">  
-        <div style = "position:fixed; left:60px; top:40px;">
-        <a href="#"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
-        </div>
-        
-       
-        <div style = "position:fixed; right:70px; top:70px;">
+	<!-- CONTENT-WRAP -->
+  <div class="content-project">  
+    <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+      <div class="col lef">
+      <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
+      </div>
+  
+       <div class="col rig">
+          <h3>
+            <a class="link-1 tango" href="projects.html">return</a>
+          </h3> 
+      </div>
+  </div>
+
+          <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
             <h3>
-                <a class="link-1 tango" href="projects.html">return</a>
-         
+                <a class="link-1 tango" href="#">↑</a>
             </h3> </div>
+
+         
+      
+       
+      
+      <!-- CONTENT -->
+      <div class="content-about">
+
+        <div style = "position:fluid;">
+      
         
-            <div style = "position:fixed; right:70px; bottom:70px;">
-              <h3>
-                  <a class="link-1 tango" href="#">㊤↑</a>
-           
-              </h3> </div>
-        
-        <!-- CONTENT -->
-        <div class="content">
-            
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
-            
 
 <style>
+@media screen and (max-width: 1200px) {
 
+.col.lef {
+order: 1; 
+}
 
-/* Create two unequal columns that floats next to each other */
+.col.rig {
+order: 2;
+}
+
+.header {
+padding-top: 30px;
+background: #ffffff;
+height: auto;
+width: 100%;
+margin:auto; 
+}
+
+.row.top-bottom {
+display: flex;
+flex-direction: column;
+}
+
+.column.top-left {
+flex:1;
+padding:20px;
+}
+
+.column.top-right {
+flex:1;
+padding-left:20px;
+padding-right:20px;
+padding-bottom:20px;
+}
+}
+
+@media (min-width: 1200px){
+.desktop-message {
+display: none;
+}
+
+.columnpic {
+float: left;
+padding: 5px;
+}
+
+.columnpicright {
+float: right;
+padding: 5px;
+}
+
 .column {
-  float: left;
-  padding: 40px;
+float: left;
+padding: 40px;
+}
+
+.top-left {
+padding: 40px; 
+}
   
+.top-right {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+  
+.rowtop {
+display: grid;
+grid-template-columns: 40% 60%; 
+background-color: #ffddc9;
+align-items: start; 
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.header {
+padding-top: 30px;
+background: #ffffff;
+height: auto;
+width: 100%;
+margin:auto; 
 }
 
 .left {
-  width: 25%;
+width: 25%;
 }
 
 .right {
-  width: 75%;
+width: 75%;
 }
-    
-.top-left {
-  width: 40%;
 }
 
-.top-right {
-  width: 60%;
+.video-container {
+position: relative;
+padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-    
-.header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin:auto; 
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+p {
+text-align: justify;
+text-justify: inter-word;
 }
-
 </style>
-                
-                
-<div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#ffddc9; height:453px;">
-    <h4>Project</h4>
-    <h1>Marine Memoirs</h1>
-    <p>Envisioning future worlds in the anthropocene with Unreal Engine 🐟</p>
-      <br>
-      <h4>Categories</h4>
-      <p>Architecture | Environment</p>
-  </div>
+              
         
-  <div class="column top-right" style="background-color:#ffddc9;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/marine%20memoirs.png" alt="profile pic"/>
-    
-  </div>
+<div class="header">
+<div class="rowtop top-bottom">
+<div class="column top-left" style="background-color:#ffddc9;">
+<h4>Project</h4> <br>
+        <h1>Marine Memoirs</h1>
+        <p>Envisioning future worlds in the anthropocene with Unreal Engine 🐟</p>
+    <br>
+    <h4>Categories</h4>
+    <p>Architecture | Environment</p>
 </div>
+    
+<div class="column top-right" style="background-color:#ffddc9;">
+<img about class="soft-rounded" src="images/marine%20memoirs.png" alt="profile pic"/>
+</div>
+</div>
+  </div>
+  
    <br>
     <div class="row">
-  <div class="column left" style="background-color:white;">
+  <div class="column left" style="background-color:white;margin-bottom: 50px;">
 <!--    <h2>Column 1</h2>-->
       <h4>Organisation</h4>
     <p>SUTD ASD Term 5<a class="peach text" href="https://asd.sutd.edu.sg/programme/bachelor-of-science-architecture-and-sustainable-design/courses/20102-architecture-core-studio-2"> Core Studio 2</a></p>
@@ -136,7 +201,7 @@
       <h4>Duration</h4>
     <p>14 weeks</p>
   </div>
-  <div class="column right" style="background-color:white;">
+  <div class="column right" style="background-color:white;margin-bottom: 50px;">
 <!--    <h2>Column 2</h2>-->
       <h4>Project Description</h4>
     <p>In this studio, we were tasked to design a “Museum of Memory” set in a future scenario where people will go to (re)member, (re)collect
@@ -145,10 +210,12 @@ and (re)construct their ‘past’ in order to make meaning out of present and p
 this respect, <a class="bold">archives are collections of time slices, of anonymous language; places of different experiences, for experimentations,
 and places that might permit the creation of different pasts, traditions or individualities.</a> Of a double nature,
 archives are at the same time that which produces and reproduces the well-known and familiar and that which allows
-          for ruptures and breaks with the past and the advent of something new. The archive creates, and it is created.”</em><br>~Ove
+          for ruptures and breaks with the past and the advent of something new. The archive creates, and it is created.”</em>&nbsp;~Ove
 Eliassen Knut, The Archives of Michel Foucault</p>
   </div>
 </div>
+
+<div class="row">
      <h2>Introduction</h2>
     <p>It is Year 2200, and we finally did it. We destroyed the Earth, slowly but steady until there was no ground
 left to stand on, no fresh air to breathe. In the aftermath of Climate Change and Anthrophocene, the Earth has
@@ -163,7 +230,9 @@ past, for today and future.</p>
 <h2>Contents</h2>
 <h3><a class="peach text" href="#wb">World Building</a> · <a class="peach text" href="#sd">Site Design</a> · <a class="peach text" href="#mc">Museum Concept</a> · <a class="peach text" href="#pm">Physical Model</a> · <a class="peach text" href="#plan">Plan</a> · <a class="peach text" href="#section">Section</a> · <a class="peach text" href="#axon">Axonometric</a> · <a class="peach text" href="#circulation">Circulation</a> · <a class="peach text" href="#ir">Individual Research</a> · <a class="peach text" href="#rr">Reading Responses</a></h3>
     <br>
-    <div style="text-align:center"><iframe width="100%" height="800" src="https://www.youtube.com/embed/E2Gn8MaVsS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/E2Gn8MaVsS8"title="Museum of Memory: Marine Memoirs (ASD Term 5 Core Studio II)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 <br>
 <!-- 
     <img style="width:100%" class="soft-rounded" src="images/mm1.png"/><br> -->
@@ -224,31 +293,16 @@ past, for today and future.</p>
     <img style="width:100%" class="soft-rounded" src="images/mm57.png"/><br>
     <img style="width:100%" class="soft-rounded" src="images/mm59.png"/><br>
     <img style="width:100%" class="soft-rounded" src="images/mm60.png"/>
-    
-</div>    
-      
-
-
-
-                
-       
-        <br><br>
- <div style = "position:relative; margin-top: 5px;margin-right: 30px; text-align: right">
-        <h6><a>made with ❤️💙💚💛💜🧡🤎🤍🖤 by sharmayne</a></h6>
-        </div>
-        
-        </div>
+    <br><br><br><br><br>
+</div>  
+</div>
+</div>           
+</div>
     	<!-- CONTENT -->
-        
-    </div>
+</div>
     <!-- CONTENT-WRAP -->
-	
-	
-    
-    
     <!-- SCRIPTS -->
 	<script src="js/main.js"></script>
-    
 
 </body>
 </html>

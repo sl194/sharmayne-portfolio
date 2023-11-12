@@ -24,131 +24,173 @@
 </head>
 
 <body>
-	
-    
-    <!-- CONTENT-WRAP -->
-    <div class="content-project">  
-        <div style = "position:fixed; left:60px; top:40px;">
-        <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
-        </div>
-        
-       
-        <div style = "position:fixed; right:70px; top:70px;">
+	 <!-- CONTENT-WRAP -->
+   <div class="content-project">  
+    <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+      <div class="col lef">
+      <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
+      </div>
+  
+       <div class="col rig">
+          <h3>
+            <a class="link-1 tango" href="projects.html">return</a>
+          </h3> 
+      </div>
+  </div>
+
+          <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
             <h3>
-                <a class="link-1 tango" href="projects.html">return</a>
-         
+                <a class="link-1 tango" href="#">↑</a>
             </h3> </div>
-            <div style = "position:fixed; right:70px; bottom:70px;">
-              <h3>
-                  <a class="link-1 tango" href="#">㊤↑</a>
-           
-              </h3> </div>
-        
+
          
+      
+       
+      
+      <!-- CONTENT -->
+      <div class="content-about">
+
+        <div style = "position:fluid;">
+      
         
-        <!-- CONTENT -->
-        <div class="content">
-            
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
-            
 
 <style>
+@media screen and (max-width: 1200px) {
 
+.col.lef {
+order: 1; 
+}
 
-/* Create two unequal columns that floats next to each other */
+.col.rig {
+order: 2;
+}
+
+.header {
+padding-top: 30px;
+background: #ffffff;
+height: auto;
+width: 100%;
+margin:auto; 
+}
+
+.row.top-bottom {
+display: flex;
+flex-direction: column;
+}
+
+.column.top-left {
+flex:1;
+padding:20px;
+}
+
+.column.top-right {
+flex:1;
+padding-left:20px;
+padding-right:20px;
+padding-bottom:20px;
+}
+}
+
+@media (min-width: 1200px){
+.desktop-message {
+display: none;
+}
+
+.columnpic {
+float: left;
+padding: 5px;
+}
+
+.columnpicright {
+float: right;
+padding: 5px;
+}
+
 .column {
-  float: left;
-  padding: 40px;
+float: left;
+padding: 40px;
+}
+
+.top-left {
+padding: 40px; 
+}
   
+.top-right {
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
-         .col3 {
-  float: left;
-  padding: 10px;
   
+.rowtop {
+display: grid;
+grid-template-columns: 40% 60%; 
+background-color: #dbc0a2;
+align-items: start; 
 }
- .one {
-  width: 33%;
+
+.row:after {
+content: "";
+display: table;
+clear: both;
 }
-   .two {
-  width: 33%;
-}
-   .three {
-  width: 33%;
-}
-    
-     .oneee {
-  width: 50%;
-}
-   .twooo {
-  width: 50%;
+
+.header {
+padding-top: 30px;
+background: #ffffff;
+height: auto;
+width: 100%;
+margin:auto; 
 }
 
 .left {
-  width: 25%;
+width: 25%;
 }
 
 .right {
-  width: 75%;
+width: 75%;
 }
-    
-.top-left {
-  width: 40%;
 }
 
-.top-right {
-  width: 60%;
+.video-container {
+position: relative;
+padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-    
-.header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin:auto; 
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+p {
+text-align: justify;
+text-justify: inter-word;
 }
-
 </style>
-                
-                
-<div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#dbc0a2; height:453px;">
-    <h4>Project</h4>
-    <h1>Bridge with FLAM joints</h1>
-    <p>Bridging digital design with real-world structures 🌉</p>
-      <br>
-      <h4>Categories</h4>
-      <p>Architecture</p>
-      <p>Environment</p>
-  </div>
+              
         
-  <div class="column top-right" style="background-color:#dbc0a2;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/bridge.png" alt="profile pic"/>
-    
-  </div>
+<div class="header">
+<div class="rowtop top-bottom">
+<div class="column top-left" style="background-color:#dbc0a2;">
+<h4>Project</h4> <br>
+        <h1>Bridge with FLAM joints</h1>
+        <p>Bridging digital design with real-world structures 🌉</p>
+    <br>
+    <h4>Categories</h4>
+    <p>Architecture | Environment</p>
 </div>
+    
+<div class="column top-right" style="background-color:#dbc0a2;">
+<img about class="soft-rounded" src="images/bridge.png" alt="profile pic"/>
+</div>
+</div>
+  </div>
+                
    <br>
     <div class="row">
-  <div class="column left" style="background-color:white;">
+  <div class="column left" style="background-color:white;margin-bottom: 50px;">
 <!--    <h2>Column 1</h2>-->
       <h4>Organisation</h4>
       <p>SUTD ASD Term 5 <a class="leather text" href='https://asd.sutd.edu.sg/programme/bachelor-of-science-architecture-and-sustainable-design/courses/20212-digital-design-and-fabrication'>DDF</a> x <a class="leather text" href='https://asd.sutd.edu.sg/programme/bachelor-of-science-architecture-and-sustainable-design/courses/20202-architectural-structure-enclosure-design'>ASED</a></p>
@@ -159,32 +201,88 @@
       <h4>Duration</h4>
     <p>7 weeks</p>
   </div>
-  <div class="column right" style="background-color:white;">
-<!--    <h2>Column 2</h2>-->
+  <div class="column right" style="background-color:white;margin-bottom: 50px;">
       <h4>Project Description</h4>
       <p>The Architectural Structure & Enclosure Design course introduces the interplay between design and physics. Digital Design and Fabrication investigates the transformation of concept design to production within contemporary digital media. Situated at the threshold between virtual and physical, design information and artifacts, it is comprised of both design computation methods as well as material fabrication techniques. In the second half of the term, a final project is undertaken combining what we have learnt from both <a class= "leather text" href="http://asd.courses.sutd.edu.sg/dfab/">Digital Design & Fabrication</a> and <a class= "leather text" href="https://asd.sutd.edu.sg/architectural-works/student-projects/architectural-structure-enclosure-design">Architectural Structures & Enclosure Design</a>. We designed, prototyped, simulated, and tested a 1:1 full-scale structure, giving us a taste of building structures that are real and tangible and ultimately can impact the built environment. In our group of 4, with Man Lin, Keith and Janus, we were able to build a bridge that could withstand the most weight of 60kg.</p>
   </div>
 </div>
-     <h4>Initial Research</h4>
-    <p>We started the project by researching about different types of trusses as well as researching on existing bridges while taking into consideration the specifications of dimensions, access, weight, loading and deflection.</p>
-    <img style="width:100%" class="soft-rounded" src="images/c1.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/c2.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/c3.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/x1.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/x2.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/x3.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/r1.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/r2.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/r3.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/truss%20types.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/dimension.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/access.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/weight.png"/><br>
-    <img style="width:100%" class="soft-rounded" src="images/loading%201.png"/><br>
-     <img style="width:100%" class="soft-rounded" src="images/deflection.png"/><br>
-     <img style="width:100%" class="soft-rounded" src="images/loading%202.png"/><br>
-    
-     <h4>Project Content</h4>
+<div class="row">
+     <h2>Initial Research</h2>
+    <p>We started the project by researching about different types of trusses as well as researching on existing bridges while taking into consideration the specifications of dimensions, access, weight, loading and deflection. Click <a class="leather text" href=#pc>here</a> to skip to project content below.</p>
+    <br>
+    <div class="row" style="display: flex; width:100%">
+      <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/c1.png"/>
+      </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/c2.png"/>
+     </div>
+    </div>
+
+    <div class="row" style="display: flex; width:100%">
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/c3.png"/>
+     </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/x1.png"/>
+     </div>
+     </div>
+
+     <div class="row" style="display: flex; width:100%">
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/x2.png"/>
+     </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/x3.png"/>
+     </div>
+     </div>
+
+     <div class="row" style="display: flex; width:100%">
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/r1.png"/>
+     </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/r2.png"/>
+     </div>
+     </div>
+
+     <div class="row" style="display: flex; width:100%">
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/r3.png"/>
+     </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/truss%20types.png"/>
+     </div>
+     </div>
+
+     <div class="row" style="display: flex; width:100%">
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/dimension.png"/>
+     </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/access.png"/>
+     </div>
+     </div>
+
+     <div class="row" style="display: flex; width:100%">
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/weight.png"/>
+     </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/loading%201.png"/>
+     </div>
+     </div>
+
+     <div class="row" style="display: flex; width:100%">
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/deflection.png"/>
+     </div>
+     <div style="margin-bottom: 25px;" class="columnpic">
+      <img class="profile-image superbig soft-rounded" src="images/loading%202.png"/>
+     </div>
+    </div>
+     
+     <h2 id="pc">Project Content</h2>
     <img style="width:100%" class="soft-rounded" src="images/bridge1.png"/><br>
     <img style="width:100%" class="soft-rounded" src="images/bridge2.png"/><br>
     <img style="width:100%" class="soft-rounded" src="images/bridge3.png"/><br>
@@ -205,29 +303,17 @@
     <img style="width:100%" class="soft-rounded" src="images/bridge18.png"/><br>
     <img style="width:100%" class="soft-rounded" src="images/bridge19.png"/><br>
     <img style="width:100%" class="soft-rounded" src="images/bridge20.png"/>
-</div>           
-
-
-
-                
-       
-        <br><br>
- <div style = "position:relative; margin-top: 5px;margin-right: 30px; text-align: right">
-        <h6><a>made with ❤️💙💚💛💜🧡🤎🤍🖤 by sharmayne</a></h6>
-        </div>
-        
-        </div>
-    	<!-- CONTENT -->
-        
-    </div>
-    <!-- CONTENT-WRAP -->
-	
-	
     
-    
-    <!-- SCRIPTS -->
-	<script src="js/main.js"></script>
-    
-
-</body>
-</html>
+    <br><br><br><br><br>
+  </div>  
+  </div>
+  </div>           
+  </div>
+        <!-- CONTENT -->
+  </div>
+      <!-- CONTENT-WRAP -->
+      <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+  
+  </body>
+  </html>

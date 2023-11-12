@@ -24,67 +24,122 @@
 </head>
 
 <body>
-	
-    
-    <!-- CONTENT-WRAP -->
-    <div class="content-project">  
-        <div style = "position:fixed; left:60px; top:40px;">
-        <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
-        </div>
-        
+	<!-- CONTENT-WRAP -->
+  <div class="content-project">  
+    <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+      <div class="col lef">
+      <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
+      </div>
+  
+       <div class="col rig">
+          <h3>
+            <a class="link-1 tango" href="projects.html">return</a>
+          </h3> 
+      </div>
+  </div>
+
+  <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
+    <h3>
+        <a class="link-1 tango" href="#">↑</a>
+    </h3> </div>
+      
        
-        <div style = "position:fixed; right:70px; top:70px;">
-            <h3>
-                <a class="link-1 tango" href="projects.html">return</a>
-         
-            </h3> </div>
+      
+      <!-- CONTENT -->
+      <div class="content-about">
+
+          <div style = "position:fluid;">
         
-            <div style = "position:fixed; right:70px; bottom:70px;">
-              <h3>
-                  <a class="link-1 tango" href="#">㊤↑</a>
-           
-              </h3> </div>
-        
-        <!-- CONTENT -->
-        <div class="content">
-            
-<!--
-            <div style = "position:fixed; left: 120px; right:120px; top:120px;">
-            <br><br>
--->
-            <div style = "position:fluid; top:100px;">
-            <br><br>
-            
+          
 
 <style>
+@media screen and (max-width: 1200px) {
 
+.col.lef {
+  order: 1; 
+}
 
-/* Create two unequal columns that floats next to each other */
+.col.rig {
+  order: 2;
+}
+
+.header {
+  padding-top: 30px;
+  background: #ffffff;
+  height: auto;
+  width: 100%;
+  margin:auto; 
+}
+
+.row.top-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.top-left {
+  flex:1;
+  padding:20px;
+}
+
+.column.top-right {
+  flex:1;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+}
+}
+
+@media (min-width: 1200px){
+.desktop-message {
+  display: none;
+}
+
+.columnpic {
+  float: left;
+  padding: 5px;
+}
+
+.columnpicright {
+  float: right;
+  padding: 5px;
+}
+
 .column {
   float: left;
   padding: 40px;
+}
   
+.top-left {
+  padding: 40px; 
 }
-    .col3 {
-  float: left;
-  padding: 10px;
+    
+.top-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+    
+.rowtop {
+  display: grid;
+  grid-template-columns: 40% 60%; 
+  background-color: #e3e3e3;
+  align-items: start; 
+}
   
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
- .one {
-  width: 33%;
+
+.header {
+  padding-top: 30px;
+  background: #ffffff;
+  height: auto;
+  width: 100%;
+  margin:auto; 
 }
-   .two {
-  width: 33%;
-}
-   .three {
-  width: 33%;
-}
-     .oneee {
-  width: 50%;
-}
-   .twooo {
-  width: 50%;
-}
+
 .left {
   width: 25%;
 }
@@ -92,59 +147,47 @@
 .right {
   width: 75%;
 }
-    
-.top-left {
-  width: 40%;
+}
+  
+.video-container {
+position: relative;
+padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
 }
 
-.top-right {
-  width: 60%;
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+p {
+  text-align: justify;
+  text-justify: inter-word;
 }
-    
-.header {
-  padding: 30px;
-  background: #ffffff;
-  height: auto;
-  width: 100%;
-  margin:auto; 
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
 </style>
-                
-                
+              
 <div class="header">
-    <div class="row">
-  <div class="column top-left" style="background-color:#e3e3e3; height:453px;">
-    <h4>Project</h4>
-    <h1>Upcycling A380 windows</h1>
-    <p>Creating a modular pavilion from old airplane windows & jute twine ✈️</p>
-      <br>
-      <h4>Categories</h4>
-      <p>Architecture | Making | Environment</p>
-  </div>
-        
-  <div class="column top-right" style="background-color:#e3e3e3;height:453px;">
-   <img style="float: right;" class="profile-image superbig soft-rounded" src="images/elevation%20bench.JPG" alt="profile pic"/>
-    
-  </div>
+<div class="rowtop top-bottom">
+<div class="column top-left" style="background-color:#e3e3e3;">
+<h4>Project</h4> <br>
+        <h1>Upcycling A380 windows</h1>
+        <p>Creating a modular pavilion from old airplane windows & jute twine ✈️</p>
+    <br>
+    <h4>Categories</h4>
+    <p>Architecture | Making | Environment</p>
 </div>
+    
+<div class="column top-right" style="background-color:#e3e3e3;">
+<img about class="soft-rounded" src="images/elevation%20bench.JPG" alt="profile pic"/>
+</div>
+</div>
+  </div>
+
    <br>
     <div class="row">
-  <div class="column left" style="background-color:white;">
+  <div class="column left" style="background-color:white; margin-bottom: 50px;">
 <!--    <h2>Column 1</h2>-->
       <h4>Organisation</h4>
     <p>SUTD ASD Term 6<a class="grey text" href="https://asd.sutd.edu.sg/programme/bachelor-of-science-architecture-and-sustainable-design/courses/design-option-studio-1-topics/the-upcycle-studio-transforming-sia-aircraft-components-into-sustainable-architecture"> The Upcycle Studio</a></p>
@@ -162,606 +205,388 @@
       <p>The Upcycle Studio challenges students to reuse retired aircraft windows donated by SIA within an architectural prototype that exemplifies design for circular economy. In the second year of my architectural education, I was given the opportunity for the first time ever to choose my modules -- and I chose this studio as the idea that we could turn parts of a plane into architecture was really exciting! Upcycling was something I was familiar with, but not at such a large scale/not with architecture, so it was really fascinating.</p></div>
      
       <h2>Initial Research on Upcycling Examples</h2>
-        
-         <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us1.jpg"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us12.jpg"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us13.jpg"/>
-  </div>
-</div> 
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us1.jpg"/>
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us12.jpg"/>
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us13.jpg"/>
+     <br>
+
       <p>We began this studio by researching about cool upcycling projects, imbrication/bio-mimetic architecture/patterns as well as small pavilions that inspire us. Personally, I was particularly impressed with Kengo Kuma's China Academy of Arts' Folk Art Museum because of how they tiling discarded from local housing in such creative ways, not only as the roof but also as the facade. This unique use of the different shaped tiles not only helped the gallery fit into both its rural and urban setting, but it also created mesmerising shadows due to the diamond-shaped gaps in the mesh made of roof tiles hung on stainless steel wires.<br><br>Understanding the design of the Gherkin was really eye-opening too. Previously, what was just one of Norman Foster's iconic buildings to me turned out to be something so fascinating as it mimics the shape and lattice structure of the Venus Flower Basket Sponge. The structural elements of the Gherkin are connected at different angles on each floor, creating a lattice-like, diagonally braced structure around the exterior that allows for an open floor plan without interior columns. In addition, similar to how the sponge's round shape provides stiffness and disperse the forces from strong currents, the building's round shape reduces wind deflections and creates the external pressure differentials that drive the natural ventilation system. Air can also flow around the building more smoothly compared to the rectilinear shape of a traditional office tower, and the openness also provides a large amount of natural light penetration.<br><br>Last but not least, I was blown away by the Zero Waste Bistro, which infused the concept of circularity in all of its parts, from the building, to the interior, to the programme, to the furniture. Designed with the philosophy of ‘refuse, reduce, reuse and recycle’, this bistro used recycled food and beverage cartons turned into environmentally friendly building materials and displayed furniture, product, interiors, and food made from 100% no waste and safe material to encourage and promote upcycling in architecture at all stages. Even its dishes comprise of commonly overlooked byproducts of our food system to produce something delicious; and its trays are made from recycled plastics that is also fully recyclable.</p>
       
         <h2>Understanding Circularity</h2>
-         <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/UNEP%20Circularity.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/UNEP%20Circularity%202.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/UNEP%20Circularity%203.png"/>
-  </div>
-</div> 
+        <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/UNEP%20Circularity.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/UNEP%20Circularity%202.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/UNEP%20Circularity%203.png"/>
+        <br>
       <p>After which, I did a quick study to get a better understanding of the circularity concept, its scope and how it contributes to promoting sustainable consumption and production patterns. As outlined by Inger Andersen, UNEP Executive Director, circularity and sustainable consumption and production are essential to delivering on every multilateral agreement, from the Sustainable Development Goals, to the Paris Agreement to the post-2020 global biodiversity framework. Hence, building circularity is essential to a sustainable recovery from the COVID-19 pandemic. In addition, circularity builds upon value retention loops such as Refuse, Reduce, Reuse, Repair, Refurbish, Remanufacture, Repurpose and Recycle, with the guiding priciple being Reduce by design.</p>
         
-       <h2>Big Shapes, Instantiation, Aggregation</h2>
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us2.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us3.png"/>
-  </div>
-</div>
-              <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/gs%20w1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/structural%20optimisation.png"/>
-  </div>
-</div>
-      <p>We dabbled in Rhino/Grasshopper with Python scripting and the use of several plugins to generate NURBS forms, populate complex surfaces with structural elements, and computationally aggregate discrete components. We briefly covered analysis based on finite element analysis via Karamba as well as analysis for embodied carbon to understand the structural integrity as well as the environmental impact of our architecture. We generated a series of ‘big shapes’ and then instantiated our components within that big shape before refining the geometry of those components (i.e. connections).</p><br>
-          <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us41.jpg"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us42.jpg"/>
-  </div>
-</div>
-      <p>On the left, I engaged in divergent ideation, just sketching whatever came to mind to create "big form" sketches of overall pavilion shapes. On the right, I explored different patterns, atmospheres and effects to show my vision for the pavilion.</p><br>
-        
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/yh1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/yh2.png"/>
-  </div>
-</div>
-      <p>These are my partner's, Yi Heng's, drawings and what he imagined the pavilion to look like. Based on both our drawings, we decided on a rough circular big form that was similar to a nest of sorts.</p><br>
-        
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us5.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/wasp.png"/>
-  </div>
-</div><br><p>On the left, a pattern is created based on a dodecahedral geometry, with some connections inverted to allow for a continuous open figure. Other patterns have been created to show different ways of aggregation by changing some of the x-axis lines in the Grasshopper code. Aggregation geometry is shown in cyan and original components are shown in red at center. On the right, multiple parts have been used to track plexi, wooden, and PLA printed materials to create this aggregation. Material tracking here has permitted calculations of the percent material upcycled as well as percent of biodegradable material.</p>
+       <h2>Big Shapes, Instantiation, Aggregation, Structural Optimisation</h2>
+       <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us2.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us3.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/gs%20w1.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/structural%20optimisation.png"/>
+        <br><p>We dabbled in Rhino/Grasshopper with Python scripting and the use of several plugins to generate NURBS forms, populate complex surfaces with structural elements, and computationally aggregate discrete components. We briefly covered analysis based on finite element analysis via Karamba as well as analysis for embodied carbon to understand the structural integrity as well as the environmental impact of our architecture. We generated a series of ‘big shapes’ and then instantiated our components within that big shape before refining the geometry of those components (i.e. connections).</p><br>
+     
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us41.jpg"/>
+      <p style="text-align: center;">Divergent Ideation</p>
+      <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us42.jpg"/>
+      <p style="text-align: center;">Exploration of different patterns, atmospheres, & effects</p>
+      <br><p>In the pictures above, I engaged in divergent ideation, just sketching whatever came to mind to create "big form" sketches of overall pavilion shapes. I also explored different patterns, atmospheres and effects to show my vision for the pavilion.</p><br>
+      
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/yh1.png"/>
+      <p style="text-align: center;">Divergent Ideation (Yi Heng)</p>
+      <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/yh2.png"/>
+      <p style="text-align: center;">Exploration of different patterns, atmospheres, & effects (Yi Heng)</p>
+      <br><p>The two pictures above are my partner's, Yi Heng's, drawings and what he imagined the pavilion to look like. Based on both our drawings, we decided on a rough circular big form that was similar to a nest of sorts.</p><br>
+      
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us5.png"/>
+      <p style="text-align: center;">Pattern created based on a dodecahedral geometry</p>
+      <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/wasp.png"/>
+      <p style="text-align: center;">Material tracking</p>
+      <br><p>In the above pictures, a pattern is created based on a dodecahedral geometry, with some connections inverted to allow for a continuous open figure. Other patterns have been created to show different ways of aggregation by changing some of the x-axis lines in the Grasshopper code. Aggregation geometry is shown in cyan and original components are shown in red at center. Following that, multiple parts have been used to track plexi, wooden, and PLA printed materials to create this aggregation. Material tracking here has permitted calculations of the percent material upcycled as well as percent of biodegradable material.</p>
    
         <h2>Further Explorations</h2>
-        <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20explorations.png"/><br>
-        <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20explorations%202.png"/>
+        <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20explorations.png"/><br>
+        <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20explorations%202.png"/>
+       <br>
         <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/papersketch3.png"/>
-  </div>
+          <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/papersketch3.png"/>
+          </div>
+         <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/papersketch2.png"/>
+         </div>
+         <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/papersketch1.png"/>
+         </div>
+         <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/papersketch5.png"/>
+         </div>
+         <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/papersketch7.png"/>
+         </div>
+         <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/papersketch8.png"/>
+         </div>
+        </div>
         
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/papersketch2.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/papersketch1.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/papersketch5.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/papersketch7.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/papersketch8.png"/>
-  </div>
-</div>
-        
+    
       <p>We continued iterating on our big form, trying to achieve the organic shape we were imagining and also trying to achieve that shape parametrically instead of manually. Here are the specific steps that we took to achieve our shape in the end. We began with the 3m x 3m x 3m boundary in mind, then created a circular form, lifting the sides to develope an organic envelope, before extruding the surface to create seating. In order to successfully populate the windows on this curved surface, we divided the surface into eight parts before populating it on each of the parts, which led us to generate cross sections around the windows.</p>
-      
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/concept%201%20us.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/concept%202%20us.png"/>
-  </div>
-</div><br>
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/concept%201%20us.png"/>
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/concept%202%20us.png"/>
+      <br>
           
-        <p>After this, we realised that the effects and shadows created by the windows were pretty interesting, hence we experimented with doubling the layers of the windows at arranged them at varying positions, to allow light to filter through at unexpected angles. Next, we realised that the distance between each cross section was too narrow for an individual seat, hence we pushed back alternate cross sections to accomodate sufficient space for seating, before connecting the cross sections with horizontal trusses for extra stability. Lastly, in order to connect everything together (i.e. the windows and cross sections), we decided to pick rattan, a material that seemed cohesive to our entire concept as it is natural and renewable. Not only is rattan eco-friendly, it is also flexible and strong, hence it was ideal for us to weave the windows and sections together and still retain that curvaceous structure, which bears much resemblance to the weaver bird’s nest, which we were initially inspired by.</p>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/concept%203%20us.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/concept%204%20us.png"/>
-  </div>
-</div>
+      <p>After this, we realised that the effects and shadows created by the windows were pretty interesting, hence we experimented with doubling the layers of the windows at arranged them at varying positions, to allow light to filter through at unexpected angles. Next, we realised that the distance between each cross section was too narrow for an individual seat, hence we pushed back alternate cross sections to accomodate sufficient space for seating, before connecting the cross sections with horizontal trusses for extra stability. Lastly, in order to connect everything together (i.e. the windows and cross sections), we decided to pick rattan, a material that seemed cohesive to our entire concept as it is natural and renewable. Not only is rattan eco-friendly, it is also flexible and strong, hence it was ideal for us to weave the windows and sections together and still retain that curvaceous structure, which bears much resemblance to the weaver bird’s nest, which we were initially inspired by.</p>
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/concept%203%20us.png"/>
+      <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/concept%204%20us.png"/>
+      
     
         <h2>Assembly Concept</h2>
         <p>After we were more or less settled with our design, we decided to outline the specific steps it took to assemble our structure in order to better prepare for making our prototype.</p>
         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus2.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus3.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus4.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus5.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus6.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus7.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus8.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus9.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus10.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus11.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus12.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus13.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/acus14.png"/>
-  </div>
-</div>
+          <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image medbig soft-rounded" src="images/acus1.png"/>
+          </div>
+          <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image medbig soft-rounded" src="images/acus2.png"/>
+            </div>
+            <div style="margin-bottom: 25px;" class="columnpic">
+              <img class="profile-image medbig soft-rounded" src="images/acus3.png"/>
+              </div>
+              <div style="margin-bottom: 25px;" class="columnpic">
+                <img class="profile-image medbig soft-rounded" src="images/acus4.png"/>
+                </div>
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image medbig soft-rounded" src="images/acus5.png"/>
+                  </div>
+                  <div style="margin-bottom: 25px;" class="columnpic">
+                    <img class="profile-image medbig soft-rounded" src="images/acus6.png"/>
+                    </div>
+                    <div style="margin-bottom: 25px;" class="columnpic">
+                      <img class="profile-image medbig soft-rounded" src="images/acus7.png"/>
+                      </div>
+                      <div style="margin-bottom: 25px;" class="columnpic">
+                        <img class="profile-image medbig soft-rounded" src="images/acus8.png"/>
+                        </div>
+                        <div style="margin-bottom: 25px;" class="columnpic">
+                          <img class="profile-image medbig soft-rounded" src="images/acus9.png"/>
+                          </div>
+                          <div style="margin-bottom: 25px;" class="columnpic">
+                            <img class="profile-image medbig soft-rounded" src="images/acus10.png"/>
+                            </div>
+                            <div style="margin-bottom: 25px;" class="columnpic">
+                              <img class="profile-image medbig soft-rounded" src="images/acus11.png"/>
+                              </div>
+                              <div style="margin-bottom: 25px;" class="columnpic">
+                                <img class="profile-image medbig soft-rounded" src="images/acus12.png"/>
+                                </div>
+                                <div style="margin-bottom: 25px;" class="columnpic">
+                                  <img class="profile-image medbig soft-rounded" src="images/acus13.png"/>
+                                  </div>
+                                  <div style="margin-bottom: 25px;" class="columnpic">
+                                    <img class="profile-image medbig soft-rounded" src="images/acus14.png"/>
+                                    </div>
+        </div>
+
         
         
       <h2>Prototype 1</h2>
         <p>Based on our big form, identified sections and ways of connection, we built a little prototype with cardboard, bristol board and sewing thread. It was immensely tedious as we did a 1:10 scale model, hence threading the string through the hard cardboard that represented our cross sectionss and bristol board that represented our windows was really difficult (and painful as we often ended up poking our fingers instead 😅). However, what was worse was that due to time constraints, we settled on cotton thread to represent the rattan instead of sourcing for the rattan and experimenting with that material. This was detrimental to the progress of our project, as the jury commented later on during our mid-term review, as we did not actually test out how rattan works when bent, and how difficult it is to work with.</p><br>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p2.png"/>
-  </div>
-</div>
-  
-        <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/p1%20part2.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/p1%20part1.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/p1%20part3.png"/>
-  </div>
-</div> 
-        
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p3.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p4.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p5.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p6.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p7.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p8.png"/>
-  </div>
-</div><br>
-      
+        <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20p1.png"/>
+        <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20p2.png"/>
+        <br>
+        <div class="row" style="display: flex; width:100%;">
+            <div style="margin-bottom: 25px;" class="columnpic">
+              <img class="profile-image superbig soft-rounded" src="images/p1%20part2.png"/>
+              </div>
+              <div style="margin-bottom: 25px;" class="columnpic">
+                <img class="profile-image superbig soft-rounded" src="images/p1%20part1.png"/>
+                </div>
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image superbig soft-rounded" src="images/p1%20part3.png"/>
+                  </div>
+                  </div>
+                  <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20p3.png"/>
+                  <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20p4.png"/>
+                  <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20p5.png"/>
+                  <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20p6.png"/>
+                  <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20p7.png"/>
+                  <br>
+
+      <h2>Next Steps</h2>
+      <p>· Explore adding more horizontal trusses to enhance the pavilion's structural integrity
+      <br>· Explore what type of connections can feasibly attach the 8 different modules together
+      <br>· Optimise the placement of horizontal modules to reduce the amount of material needed for horizontal supports
+      <br>· Optimise the rattan weaving pattern to allow for more continuous weaving throughout the structure
+      <br>· Complete the scale model
+      </p>
       
       
       <h2>Circular Design Concept</h2>
-         <img style="width:100%" class="profile-image superbig soft-rounded" src="images/circular%20design%20concept%20us.png"/>
-      <p>The three main processes we used were Repurpose, Reduce by design, and Reuse.
-We aimed to create architecture that harnessed sustainable materials to create a beautiful space for people to interact, and is also able to be dismantled to continue its lifespan. Although we proposed using rattan (without actually experimenting with the material), we did a prior study of rattan, natural fibres and recycled nylon to understand their strength, durability and impact on the environment. We also did a quick calculation of how much GWP was reduced from using wood in our initial parametric design versus using a combination of hemp rope, wood and airplane windows.</p>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/repurpose%20us.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/reduce%20by%20design.png"/>
-  </div>
-</div>
-        
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/material%20study.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/material%20choice.png"/>
-  </div>
-</div>
-        
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/reuse%20use.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/reuse%20scalability.png"/>
-  </div>
-</div>
+      <div class="columnpic">
+        <img class="profile-image medbig soft-rounded" src="images/circular%20design%20concept%20us.png"/>
+       </div>
+      <p><br>The three main processes we used were Repurpose, Reduce by design, and Reuse. We aimed to create architecture that harnessed sustainable materials to create a beautiful space for people to interact, and is also able to be dismantled to continue its lifespan. Although we proposed using rattan (without actually experimenting with the material), we did a prior study of rattan, natural fibres and recycled nylon to understand their strength, durability and impact on the environment. We also did a quick calculation of how much GWP was reduced from using wood in our initial parametric design versus using a combination of hemp rope, wood and airplane windows.
+      </p><br><br>
+
+      <div class="row">
+        <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image superbig soft-rounded" src="images/repurpose%20us.png"/>
+          </div>
+          <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image superbig soft-rounded" src="images/reduce%20by%20design.png"/>
+            </div>
+            <div style="margin-bottom: 25px;" class="columnpic">
+              <img class="profile-image superbig soft-rounded" src="images/material%20study.png"/>
+              </div>
+              <div style="margin-bottom: 25px;" class="columnpic">
+                <img class="profile-image superbig soft-rounded" src="images/material%20choice.png"/>
+                </div>
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image superbig soft-rounded" src="images/reuse%20use.png"/>
+                  </div>
+                  <div style="margin-bottom: 25px;" class="columnpic">
+                    <img class="profile-image superbig soft-rounded" src="images/reuse%20scalability.png"/>
+                    </div>
+                    <div style="margin-bottom: 25px;" class="columnpic">
+                      <img class="profile-image superbig soft-rounded" src="images/material%20study.png"/>
+                      </div>
+              </div>
+
         
         <h2>Initial proposal during mid-term review</h2>
          <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/midterm%20render9.png"/><br>
       
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render2.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render3.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render4.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render5.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render6.png"/>
-  </div>
-</div>
-       <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render7.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/midterm%20render8.png"/>
-  </div>
-</div>  
+         <div class="row">
+          <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image superbig soft-rounded" src="images/midterm%20render1.png"/>
+            </div>
+            <div style="margin-bottom: 25px;" class="columnpic">
+              <img class="profile-image superbig soft-rounded" src="images/midterm%20render2.png"/>
+              </div>
+              <div style="margin-bottom: 25px;" class="columnpic">
+                <img class="profile-image superbig soft-rounded" src="images/midterm%20render3.png"/>
+                </div>
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image superbig soft-rounded" src="images/midterm%20render4.png"/>
+                  </div>
+                  <div style="margin-bottom: 25px;" class="columnpic">
+                    <img class="profile-image superbig soft-rounded" src="images/midterm%20render5.png"/>
+                    </div>
+                    <div style="margin-bottom: 25px;" class="columnpic">
+                      <img class="profile-image superbig soft-rounded" src="images/midterm%20render6.png"/>
+                      </div>
+                      <div style="margin-bottom: 25px;" class="columnpic">
+                        <img class="profile-image superbig soft-rounded" src="images/midterm%20render7.png"/>
+                        </div>
+                        <div style="margin-bottom: 25px;" class="columnpic">
+                          <img class="profile-image superbig soft-rounded" src="images/midterm%20render8.png"/>
+                          </div>
+                           </div>
+
         
         <h2>Iterations after Mid-term Review</h2>
         <p>During our mid-term review, we had feedback that in our proposal, our window was not the star, instead it looked like the supporting cast, like something the design could do without. In addition, structural challenges were not resolved yet in our design as our prototype showed that the structural integrity was lacking as the parts were not integrated. The windows did not do anything for our design structurally, hence it looked like redundant accessories. Moreover, the concept of modularity that our pavilion had was very basic, as it was simply breaking and combining them into different pieces. The jury also emphasized the importance of trying out the materials that we proposed to use in our design or else we wouldn't know the material properties and whether it was suitable to use.
             <br><br>
             From all the feedback, we consolidated them into three key points:
-            <br>1. How do we incorporate the <a class="bold">airplane window elements to be integral</a> to the design of the pavilion?
-            <br>2.Rattan is not suitable for weaving. What <a class="bold">material is more appropriate for weaving</a>?
+            <br><br>1. How do we incorporate the <a class="bold">airplane window elements to be integral</a> to the design of the pavilion?
+            <br>2. Rattan is not suitable for weaving. What <a class="bold">material is more appropriate for weaving</a>?
             <br>3. Further exploration of other <a class="bold">circularity processes</a> in our project
 </p>
-         <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/revised1.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/revised2.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/revised3.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/ussketch1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/ussketch2.png"/>
-  </div>
-</div> 
+<br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/revised1.png"/>
+<br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/revised2.png"/>
+<br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/revised3.png"/>
+<br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/ussketch1.png"/>
+<br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/ussketch2.png"/>
+
         
         <h2>Prototype 2</h2>
       <p>After the feedback, we iterated more on our design and came up with a design that incorporated the windows as structural elements. We tried to achieve the effect of weaving through both the horizontal wood supports as well as the multi-coloured recycled cotton cord. We laser cut holes on the thinner 4mm sheets of acrylic from the airplane windows and used the CNC machine to cut out the 9mm plywood pieces. After assembling the acrylic and plywood, we then threaded the cord through the holes on the acrylic to act as tension and to create seating. Initially, after testing it with weights like our computers and as a leg rest, it seemed to work and hold the weight. However, after actually sitting on it, it was not able to withstand our weight and the acrylic window on one side cracked at the part where we cut the rectangular hole out. From this, we realized that we should reduce the number of holes cut from the window as well as change the orientation that the plywood was placed in the middle as a vertical orientation of the horizontal plywood trusses would allow it to resist compression better when weight is placed on the strings above.</p>
-       <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p21.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p22.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p23.png"/>
-  </div>
-</div> 
-         <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p24.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p25.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p26.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p27.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p28.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p29.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p210.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p211.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p212.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p213.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p214.png"/>
-    </div>
-</div> 
+      <div class="row">
+        <div style="margin-bottom: 25px;" class="columnpic">
+          <img class="profile-image superbig soft-rounded" src="images/us%20p21.png"/>
+          </div>
+          <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image superbig soft-rounded" src="images/us%20p22.png"/>
+            </div>
+            <div style="margin-bottom: 25px;" class="columnpic">
+              <img class="profile-image superbig soft-rounded" src="images/us%20p23.png"/>
+              </div>
+              <div style="margin-bottom: 25px;" class="columnpic">
+                <img class="profile-image superbig soft-rounded" src="images/us%20p24.png"/>
+                </div>
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image superbig soft-rounded" src="images/us%20p25.png"/>
+                  </div>
+                  <div style="margin-bottom: 25px;" class="columnpic">
+                    <img class="profile-image superbig soft-rounded" src="images/us%20p26.png"/>
+                    </div>
+                    <div style="margin-bottom: 25px;" class="columnpic">
+                      <img class="profile-image superbig soft-rounded" src="images/us%20p27.png"/>
+                      </div>
+                      <div style="margin-bottom: 25px;" class="columnpic">
+                        <img class="profile-image superbig soft-rounded" src="images/us%20p28.png"/>
+                        </div>
+                        <div style="margin-bottom: 25px;" class="columnpic">
+                          <img class="profile-image superbig soft-rounded" src="images/us%20p29.png"/>
+                          </div>
+                          <div style="margin-bottom: 25px;" class="columnpic">
+                            <img class="profile-image superbig soft-rounded" src="images/us%20p210.png"/>
+                            </div>
+                            <div style="margin-bottom: 25px;" class="columnpic">
+                              <img class="profile-image superbig soft-rounded" src="images/us%20p211.png"/>
+                              </div>
+                              <div style="margin-bottom: 25px;" class="columnpic">
+                                <img class="profile-image superbig soft-rounded" src="images/us%20p212.png"/>
+                                </div>
+                                <div style="margin-bottom: 25px;" class="columnpic">
+                                  <img class="profile-image superbig soft-rounded" src="images/us%20p213.png"/>
+                                  </div>
+                                  <div style="margin-bottom: 25px;" class="columnpic">
+                                    <img class="profile-image superbig soft-rounded" src="images/us%20p214.png"/>
+                                    </div>
+                                    </div>
+                    
         <h2>Prototype 3</h2>
         <p>After the 2nd prototype, we decided to use the thicker acrylic sheets from the airplane windows instead to provide more structural stability. Hence, we fabricated a frame of sorts using plywood to hold the airplane window in place in order for us to cut holes in it using the CNC machine. For the plywood supports, we created an interlocking mechanism that only had three ends to slot into the windows instead of 4 in our previous iteration. In addition, these plywood pieces had slots at the top and bottom for vertical stacking. After cutting using the CNC machine, we had to sand the pieces as the plywood was scrap material of poor quality, thus had a lot of fraying. We then proceeded to assemble the parts before weaving, this time in a different way that allowed for the force to spread out more evenly. After assembling one module, we tried stacking them vertically and horizontally too, and to our pleasant surprise, it was pretty sturdy. Last but not least, we tested with our weight, applying pressure and shifting our weight from left to right (all while having bated breaths in hope that this would be our last prototype/it would not break under our weight).</p>
-       <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p31.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p32.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p33.png"/>
-  </div>
-</div> 
-        
         <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p34.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p35.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p36.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 one" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p37.png"/>
-  </div>
-        
-  <div class="col3 two" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p38.png"/>
-  </div>
-             
-    <div class="col3 three" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p39.png"/>
-  </div>
-</div> 
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20p310.gif"/>
-  </div>
-</div>
-        
+          <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image superbig soft-rounded" src="images/us%20p31.png"/>
+            </div>
+            <div style="margin-bottom: 25px;" class="columnpic">
+              <img class="profile-image superbig soft-rounded" src="images/us%20p32.png"/>
+              </div>
+              <div style="margin-bottom: 25px;" class="columnpic">
+                <img class="profile-image superbig soft-rounded" src="images/us%20p33.png"/>
+                </div>
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image superbig soft-rounded" src="images/us%20p34.png"/>
+                  </div>
+                  <div style="margin-bottom: 25px;" class="columnpic">
+                    <img class="profile-image superbig soft-rounded" src="images/us%20p35.png"/>
+                    </div>
+                    <div style="margin-bottom: 25px;" class="columnpic">
+                      <img class="profile-image superbig soft-rounded" src="images/us%20p36.png"/>
+                      </div>
+                      <div style="margin-bottom: 25px;" class="columnpic">
+                        <img class="profile-image superbig soft-rounded" src="images/us%20p37.png"/>
+                        </div>
+                        <div style="margin-bottom: 25px;" class="columnpic">
+                          <img class="profile-image superbig soft-rounded" src="images/us%20p38.png"/>
+                          </div>
+                          <div style="margin-bottom: 25px;" class="columnpic">
+                            <img class="profile-image superbig soft-rounded" src="images/us%20p39.png"/>
+                            </div>
+                            <div style="margin-bottom: 25px;" class="columnpic">
+                              <img class="profile-image superbig soft-rounded" src="images/us%20p310.gif"/>
+                              </div>
+                                </div>
+                                      
          <h2>Final Product</h2>
-      <p>Fortunately, all went well and Prototype 3 was our final prototype. We proceeded to dimension out our final product and analyse our designs for its embodied carbon. We also put together an assembly manual, inspired by IKEA, to give our audience the idea of how simple it is to assemble our product themselves, and even did a live demonstration during the presentation. In the assembly manual, we also included an appendix that showed consumers alternative materials for the string and wood used in this piece of furniture such that they can replace the materials if they are damaged due to wear and tear. The idea was to also allow consumers to gain a better understanding of sthe relative strength, durability, costs and eco-friendliness of each of the materials to help users make more informed decisions when choosing which material to replace their parts with.</p>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final3.png"/>
-  </div>
-</div>  
-        
-          <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/us%20elevation.JPG"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/us%20detail.JPG"/>
-  </div>
-</div>  
-        
-          <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/us%20side.JPG"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/us%20axo.JPG"/>
-  </div>
-</div>  
-        
-        <img style="width:100%; object-fit: cover;" src="images/us%20final%20assembly.png"/>
-        
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final%20plan.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final%20isometric.png"/>
-  </div>
-</div>  
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final%20elevationa.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final%20elevationb.png"/>
-  </div>
-</div>  
-         <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final%20render.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: contain;" class="profile-image superbig soft-rounded" src="images/us%20final%20extensibility.png"/>
-  </div>
-</div> <br>
-        <p>We based our design on two main principles: <a class="bold">Eliminating waste and pollution</a> and <a class="bold">circulating products and materials</a>. By optimising our design through physical and digital prototyping to minimise use of additional material like wood and using materials that are recycled (i.e. cotton cord), we breathe new life into pieces of aviation history (i.e. airplane windows) by turning them into value-added furniture. We have two different types of materials that go into the system: the finite materials like the acrylic used to make airplane windows and renewable materials like wood, natural fibres and energy. These raw materials would be processed by factories to form materials like plywood, airplane windows and cotton cord. After the airplane windows have served their function in planes and are discarded, then product manufacturers like IKEA or furniture shops can collect them to make our furniture product. To make the product, digital fabrication methods such as CNC can be used to cut holes in the windows or cut the wood into its shapes. After the product is made, it would be transferred to the service provider which could either be consumers themselves or furniture shops or even event management firms to assemble the furniture. This would involve putting the wood and window pieces together and then manually weaving cotton cord through the holes on the windows. After the piece of furniture has reached the users, they can either share its use with friends and family. In addition, if there are parts of the furniture like for instance the string which has broken, it can be replaced simply by buying a new spool of string. The bench can also be reused and redistributed, from individuals to small pavilions in indoor venues to large event spaces that require seating areas. In addition, companies can accept the return of worn-out materials and make new products with constituent materials like the airplane windows or plywood pieces. In the cycle of the management of renewables, the wood and cotton can also undergo anaerobic digestion to become biomass to produce electricity and heat. Last but not least, materials that make up the bench can also be recycled. If solid wood is used in the product, it can be turned into plywood or particle board. Plywood and particle board can be shredded and used as compost. After regeneration of raw materials in the biosphere, the wood and cotton can be collected and return into the cycle.</p>
-         <img style="width:100%; object-fit: cover;" class="soft-rounded" src="images/us%20final%20upcycling.png"/>
+      <p>Fortunately, all went well and Prototype 3 was our final prototype. We proceeded to dimension out our final product and analyse our designs for its embodied carbon. We also put together an assembly manual, inspired by IKEA, to give our audience the idea of how simple it is to assemble our product themselves, and even did a live demonstration during the presentation. In the assembly manual, we also included an appendix that showed consumers alternative materials for the string and wood used in this piece of furniture such that they can replace the materials if they are damaged due to wear and tear. The idea was to also allow consumers to gain a better understanding of sthe relative strength, durability, costs and eco-friendliness of each of the materials to help users make more informed decisions when choosing which material to replace their parts with.
+      </p>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final1.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final3.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20elevation.JPG"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20detail.JPG"/>
+              <br>
+              <div class="row" style="display: flex; width:100%;">
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image ultrabig soft-rounded" src="images/us%20side.JPG"/>
+                  </div>
+                  <div style="margin-bottom: 25px;" class="columnpic">
+                    <img class="profile-image ultrabig soft-rounded" src="images/us%20axo.JPG"/>
+                    </div>
+                </div>
+           
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20assembly.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20plan.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20isometric.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20elevationa.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20elevationb.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20render.png"/>
+              <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20extensibility.png"/>
+              <br>
+        <p>We based our design on two main principles: <a class="bold">Eliminating waste and pollution</a> and <a class="bold">circulating products and materials</a>.
+          <br><br>By optimising our design through physical and digital prototyping to minimise use of additional material like wood and using materials that are recycled (i.e. cotton cord), we breathe new life into pieces of aviation history (i.e. airplane windows) by turning them into value-added furniture. We have two different types of materials that go into the system: the finite materials like the acrylic used to make airplane windows and renewable materials like wood, natural fibres and energy. These raw materials would be processed by factories to form materials like plywood, airplane windows and cotton cord. After the airplane windows have served their function in planes and are discarded, then product manufacturers like IKEA or furniture shops can collect them to make our furniture product. To make the product, digital fabrication methods such as CNC can be used to cut holes in the windows or cut the wood into its shapes. After the product is made, it would be transferred to the service provider which could either be consumers themselves or furniture shops or even event management firms to assemble the furniture. This would involve putting the wood and window pieces together and then manually weaving cotton cord through the holes on the windows. After the piece of furniture has reached the users, they can either share its use with friends and family. In addition, if there are parts of the furniture like for instance the string which has broken, it can be replaced simply by buying a new spool of string. The bench can also be reused and redistributed, from individuals to small pavilions in indoor venues to large event spaces that require seating areas. In addition, companies can accept the return of worn-out materials and make new products with constituent materials like the airplane windows or plywood pieces. In the cycle of the management of renewables, the wood and cotton can also undergo anaerobic digestion to become biomass to produce electricity and heat. Last but not least, materials that make up the bench can also be recycled. If solid wood is used in the product, it can be turned into plywood or particle board. Plywood and particle board can be shredded and used as compost. After regeneration of raw materials in the biosphere, the wood and cotton can be collected and return into the cycle.</p>
+         <img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20upcycling.png"/>
 
-      <h2>Final review, Exhibition</h2>
+      <h2>Final Review, Exhibition</h2>
         <p>After 13 weeks of intense work, we finally presented our piece of upcycled furniture to a panel of jury from Singapore Airlines, architects from overseas or from the industry and other faculty. Our school's marketing team even graced the event to do a cover of what we had achieved in this studio. Those that were present during our mid-term review were very pleased with the progress we had made and the push to our design to make it much more convinving. Although the airplane window was not "the star" of the piece of furniture, it was integrated so seamlessly such that it cannot really be seen and looked as though the strings were suspended in the air, however without the airplane windows, this piece of furniture would not work. There was feedback for future explorations that perhaps there could be a better way of weaving, as the weaving sequence is not very straightforward and was pretty tedious, and some also commented that perhaps this could work very well as a rocking horse for kids. This was brought up as initially, before attempting to sit on our furniture, some were afraid that it would breka under their weight, hence they thought it might be more suitable for children, however, after several attempts by different people in the jury (the heaviest weighing about 90kg), our bench still emerged strong and unaffected.</p>
+         <br>
+         
          <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/sutd%20insta1.png"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/sutd%20insta2.png"/>
-  </div>
-</div>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/erwin%20test.JPG"/>
-  </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/us%20board.png"/>
-  </div>
-</div>
-        
+          <div style="margin-bottom: 25px;" class="columnpic">
+            <img class="profile-image ultrabig soft-rounded" src="images/sutd%20insta1.png"/>
+            </div>
+            <div style="margin-bottom: 25px;" class="columnpic">
+              <img class="profile-image ultrabig soft-rounded" src="images/sutd%20insta2.png"/>
+              </div>
+              </div> 
+              <div class="row" style="display: flex; width:100%;">
+              <div style="margin-bottom: 25px;" class="columnpic">
+                <img class="profile-image ultrabig soft-rounded" src="images/erwin%20test.JPG"/>
+                </div>
+                <div style="margin-bottom: 25px;" class="columnpic">
+                  <img class="profile-image ultrabig soft-rounded" src="images/us%20board.png"/>
+                  </div>
+          </div>
+
         
      <h2>Reflections</h2>
-        <div class="row">
-  <div class="col3 oneee" style="background-color:white">
-   <img style="width:100%; object-fit: cover;" class="profile-image superbig soft-rounded" src="images/us%20final%20ikea.png"/>
+     <p>Here is a little mockup of our product being sold on the IKEA website as a furniture kit for consumers to purchase and build it themselves either into a single bench, or any configuration they would like. These modular mini benches can be arranged both horizontally and vertically, inviting visitors to stack them as they please, to form either seatings with backrest, semi-closed structures for more privacy or even as playground blocks. When many modules come together, a prismatic installation materialises, making an interior space more vibrant, providing visual delight to visitors, and encouraging them to interact with these modules. Through this, we hope to be able to introduce the spirit of upcycling to users, while also allowing a level of participation on their part.
+    </p>
+    <br><img style="width:100%; object-fit: contain;" class="soft-rounded" src="images/us%20final%20ikea.png"/>
+   
+  <br><br><br><br><br>
+  </div>  
   </div>
-        
-  <div class="col3 twooo" style="background-color:white">
-   <p>Here is a little mockup of our product being sold on the IKEA website as a furniture kit for consumers to purchase and build it themselves either into a single bench, or any configuration they would like. These modular mini benches can be arranged both horizontally and vertically, inviting visitors to stack them as they please, to form either seatings with backrest, semi-closed structures for more privacy or even as playground blocks. When many modules come together, a prismatic installation materialises, making an interior space more vibrant, providing visual delight to visitors, and encouraging them to interact with these modules. Through this, we hope to be able to introduce the spirit of upcycling to users, while also allowing a level of participation on their part.</p>
+  </div>           
   </div>
-</div>
-        
-      
-
+        <!-- CONTENT -->
   </div>
-</div>
-</div>           
-
-
-
-                
-       
-        <br><br>
- <div style = "position:relative; margin-top: 5px;margin-right: 30px; text-align: right">
-        <h6><a>made with ❤️💙💚💛💜🧡🤎🤍🖤 by sharmayne</a></h6>
-        </div>
-        
-        </div>
-    	<!-- CONTENT -->
-        
-    </div>
-    <!-- CONTENT-WRAP -->
-	
-	
-    
-    
-    <!-- SCRIPTS -->
-	<script src="js/main.js"></script>
-    
-
-</body>
-</html>
+      <!-- CONTENT-WRAP -->
+      <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+  
+  </body>
+  </html>

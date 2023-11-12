@@ -1,25 +1,3 @@
-/* --------------------------------------------
-	
-	main.css : this is the main style file of the theme.
-	
-	Project 	: LazyGuy
-	Author 		: pixelwars 
-	Url			: pixelwars.org
-	
-	---
-	
-	CONTEXT:
-	
-	1. BASE (@base)
-	2. TYPOGRAPHY (@typo)
-	3. HELPERS (@helpers)
-	4. LAYOUT (@layout)
-	5. ELEMENTS (@elements)
-	5. MEDIA QUERIES (@media)
-	
- -------------------------------------------- */
- 
- 
  /* burger */
 .container {
   display: inline-block;
@@ -99,8 +77,8 @@ a{
 .filters {
   text-align: center;
   margin-top: 2rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
+    /* margin-left: 12rem;
+    margin-right: 12rem; */
 }
 
 .filters * {
@@ -251,15 +229,21 @@ margin-bottom: 1rem;
   color: var(--white);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1600px) {
+	.posts {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+  }
+
+@media screen and (max-width: 1200px) {
   .posts {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   .posts {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -433,6 +417,24 @@ p:last-child {
 .profile-image {
 	max-height: 92px;
 	}
+	
+.profile-image.big {
+	max-height: 192px;
+	}
+.profile-image.medbig {
+	max-height: 276px;
+	}
+.profile-image.superbig {
+	max-height: 369px;
+	}
+	.profile-image.supermaxbig {
+		max-height: 900px;
+		}
+.profile-image.ultrabig {
+	max-height: 100%;
+	}
+
+
 .profile-image.is-outside {
 	margin-top: -50%; margin-bottom: 0;
 	}
@@ -823,7 +825,7 @@ html a.social-link:hover:before {
 	}
 /* grey links */
 .link-1.grey:after {
-	background: #AAB8C1;
+	background: #98a3ab;
 	}
 
 /* LINK 2 */
@@ -924,7 +926,7 @@ html a.social-link:hover:before {
 /* grey links */
 .link-2.grey:before,
 .link-2.grey:after {
-	background: #AAB8C1;
+	background: #98a3ab;
 	}
 
 
@@ -1081,10 +1083,10 @@ html a.social-link:hover:before {
 	}
 /* grey buttons */
 .button.grey {
-	border-color: #AAB8C1; color: #AAB8C1;
+	border-color: #98a3ab; color: #98a3ab;
 	}
 .button.grey:after {
-	background: #AAB8C1;
+	background: #98a3ab;
 	}
 /* icons in buttons */
 .button i {
@@ -1164,7 +1166,7 @@ html a.social-link:hover:before {
 	}
 /* grey highlights */
 .highlight.grey {
-	background: #AAB8C1;
+	background: #98a3ab;
 	}
 	
 	
@@ -1227,7 +1229,7 @@ html a.social-link:hover:before {
 	}
 /* grey text */
 .text.grey {
-	color: #AAB8C1;
+	color: #98a3ab;
 	}
 
 /* TYPED TEXT */
@@ -1277,7 +1279,9 @@ html a.social-link:hover:before {
     .profile-image.superbig {
 		max-height: 369px;
 		}
-
+		.profile-image.supermaxbig {
+			max-height: 900px;
+			}
 		.profile-image.ultrabig {
 			max-height: 100%;
 			}

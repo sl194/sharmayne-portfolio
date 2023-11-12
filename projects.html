@@ -22,45 +22,66 @@
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <style>
-      @media (max-width: 768px) {
-        .content-filter {
-            display:none}
+      @media (max-width: 1400px) {
+        .col.lef {
+        order: 1; 
+        }
+
+        .col.rig {
+        order: 2;
+        }
+        .filters{
+          margin-left: 0;
+         margin-right: 0;
+        }
+        /* .content-filter {
+            display:none} */
         
-      .desktop-message {
+      /* .desktop-message {
         display: block;
         text-align: center;
         padding: 20px 20px;
-        background-color: #f8d7da; /* Adjust the background color as needed */
-        color: #721c24; /* Adjust the text color as needed */
-      }
+        background-color: #f8d7da;
+        color: #721c24; } */
+
     }
   
-    @media (min-width: 768px) 
-    {.desktop-message {
+    @media (min-width: 1400px) {
+      .desktop-message {
       display: none;
-    }}
+    }
+    .filters{
+          margin-left: 12rem;
+         margin-right: 12rem;
+        }
+  }
   </style>
 </head>
 
 <body>
-	<div class="desktop-message">
+	<!-- <div class="desktop-message">
     <h3>Apologies for any inconvenience. This site is undergoing mobile optimization. For the best experience, please use a desktop. Thank you for your understanding!</h3>
-  </div>
+  </div> -->
     
     <!-- CONTENT-WRAP -->
     <div class="content-filter">  
-        <div style = "position:absolute; left:-110px; top:55px;">
+      <div style="position:sticky; top:0; display:flex; justify-content: space-between; align-items: center; background-color: #ffffff; z-index: 100; padding-top:55px;padding-bottom:25px;">
+        <div class="col lef">
         <a href="index.html"><img class="profile-image small rounded" src="images/v3%20logo.png" alt="logo"/></a>
         </div>
-        
-       
-        <div style = "position:absolute; right:-100px; top:80px;">
+    
+         <div class="col rig">
             <h3>
-                <a class="link-1 navy" href="index.html">home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="link-1 green" href="about.html">about</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="link-1 tango" href="projects.html">projects</a>
-         
-            </h3> </div>
+            <a class="link-1 navy" href="index.html">home</a>&nbsp;&nbsp;
+            <a class="link-1 green" href="about.html">about</a>&nbsp;&nbsp;
+            <a class="link-1 tango" href="projects.html">projects</a>
+            </h3> 
+        </div>
+    </div>
+    <div style = "position:fixed; right:70px; bottom:70px; align-items: center; background-color: #ffffff; z-index: 100; padding-top: 15px;padding-bottom: 5px; padding-left: 20px;padding-right: 20px;border-radius: 100px;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;">
+      <h3>
+          <a class="link-1 tango" href="#">↑</a>
+      </h3> </div>
         
             
         
@@ -76,7 +97,7 @@
 
         
         <!-- CONTENT -->
-        <div class="content-f">
+        <div class="content-about">
             <input type="radio" id="All" name="categories" value="All" checked>
                <input type="radio" id="Research" name="categories" value="Research">
             <input type="radio" id="Architecture" name="categories" value="Architecture">
@@ -1389,25 +1410,12 @@
                 
 -->
             </ol>
-            
-<!--
-            
-        
-            <br><br>
- <div style = "position:relative; margin-top: 5px; text-align: right">
-         <h6>made with >1500 google 🔎, 28🧋, and much ❤️‍🔥in an endeavour to improve my <a class="link-1 green" href="https://sl194.github.io/sharmayne-portfolio/">old website</a></h6>
-        </div>
--->
-      
+            <br><br><br><br><br>
         </div>
     	<!-- CONTENT -->
-        
     </div>
     <!-- CONTENT-WRAP -->
 	
-	
-    
-    
     <!-- SCRIPTS -->
 	<script src="js/main.js"></script>
     
